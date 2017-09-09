@@ -1,17 +1,17 @@
-export class WorkExp{
+export class WorkExp {
 
-  company:string;
+  company: string;
   // relative path to the company logo
-  logo:string;
-  title:string;
+  logo: string;
+  title: string;
   // list of keywords that will be displayed as chips
-  keywords:string[];
+  keywords: string[];
   // list of highlights that will be displayed as list items
-  highlights:string[];
-  location:string;
-  date:string;
+  highlights: string[];
+  location: string;
+  date: string;
 
-  constructor(company:string, logo:string, title:string, keywords:string[], highlights:string[], location:string, date:string){
+  constructor(company: string, logo: string, title: string, keywords: string[], highlights: string[], location: string, date: string) {
       this.company = company;
       this.logo = logo;
       this.title = title;

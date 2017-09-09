@@ -1,0 +1,24 @@
+<div class="container" fxLayout.gt-sm="column" fxLayout.lt-sm="row">
+    <!-- image -->
+    <div fxFlex="100%">
+            <img [src] = "dashboardDetails.photo1">
+    </div>
+    <!-- heading -->
+    <div fxFlex="100%">
+        <p>
+            <img [src] = "dashboardDetails.logo1">
+        </p>
+            {{dashboardDetails.title}}
+        </p>
+        <p>
+            {{dashboardDetails.description1}}
+        </p>
+    </div>
+    <!-- chips -->
+    <div fxFlex="100%">
+        <md-chip-list>
+                <md-chip *ngFor="let keyword of dashboardDetails.highlights">
+                        {{keyword}}
+                </md-chip>
+        </md-chip-list>
+</div>

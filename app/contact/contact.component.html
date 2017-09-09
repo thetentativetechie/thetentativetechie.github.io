@@ -1,0 +1,11 @@
+<!-- the contact items will display in a single row in smaller screens with smaller icons
+    while in the large screens will display in different rows -->
+<div class="container" fxLayout.gt-sm="column" fxLayout.lt-sm="row" 
+fxLayoutAlign.lt-sm="space-around" fxLayoutAlign.gt-sm="center">
+
+    <!-- repeat for every navigation item -->
+    <div fxFlex="{{contactColumnWidth}}%" *ngFor="let contact of contacts">
+            <a (click)="onContactClick(contact)" >{{contact.title}}</a>                    
+    </div>
+    
+</div>

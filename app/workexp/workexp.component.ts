@@ -5,23 +5,28 @@ import {OnInit} from '@angular/core';
 
 
 @Component({
-  selector:'workexp-list',
-  templateUrl:'./workexp.component.html'
+  selector: 'workexp-list',
+  templateUrl: './workexp.component.html'
 })
 export class WorkExpComponent implements OnInit {
 
-  dataService:DataService;
-  workExpList:WorkExp[];
+  dataService: DataService;
+  workExpList: WorkExp[];
+  workExpColumnWidth: Number;
 
-
-  constructor(dataService:DataService) {
+  constructor(dataService: DataService) {
     this.dataService = dataService;
   }
 
 
   ngOnInit() {
-      const type:string = 'json';
+      const type: string = 'json';
       this.workExpList = this.dataService.getWorkExpList(type);
+      this.workExpColumnWidth = this.workExpList.length / 100;
   }
+
+  onWorkExpBtnClick = function(workexp) {
+    console.dir(workexp);
+  };
 
 }

@@ -10,6 +10,8 @@ import {ShowcaseComponent} from './showcase/showcase.component';
 import {WorkExpComponent} from './workexp/workexp.component';
 
 import {DataService} from './common/dataservice';
+import {FlexLayoutModule} from '@angular/flex-layout';
+import {CustomRoutingModule} from './common/routing.module';
 
 
 @NgModule({
@@ -17,9 +19,11 @@ import {DataService} from './common/dataservice';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FlexLayoutModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

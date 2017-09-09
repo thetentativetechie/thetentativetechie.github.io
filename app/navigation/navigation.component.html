@@ -1,0 +1,11 @@
+<!-- the navigation items will display in a single row in smaller screens with smaller icons
+    while in the large screens will display in different rows -->
+<div class="container" fxLayout.gt-sm="column" fxLayout.lt-sm="row" 
+fxLayoutAlign.lt-sm="space-around" fxLayoutAlign.gt-sm="center">
+
+    <!-- repeat for every navigation item -->
+    <div fxFlex="{{navigationItemWidth}}%" *ngFor="let navigation of navigationList">
+            <a routerLink="{{navigation.route}}" routerLinkActive="active">{{navigation.title}}</a>                    
+    </div>
+    
+</div>

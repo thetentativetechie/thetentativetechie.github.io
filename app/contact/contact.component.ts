@@ -5,23 +5,28 @@ import {OnInit} from '@angular/core';
 
 
 @Component({
-  selector:'contact-list',
-  templateUrl:'./contact.component.html'
+  selector: 'contact-list',
+  templateUrl: './contact.component.html'
 })
 export class ContactComponent implements OnInit {
 
-  dataService:DataService;
-  contacts:Contact[];
+  dataService: DataService;
+  contacts: Contact[];
+  contactColumnWidth: Number;
 
-
-  constructor(dataService:DataService) {
+  constructor(dataService: DataService) {
     this.dataService = dataService;
   }
 
 
   ngOnInit() {
-      const type:string = 'json';
+      const type: string = 'json';
       this.contacts = this.dataService.getContactList(type);
+      this.contactColumnWidth = this.contacts.length / 100;
   }
+
+  onContactClick = function(contact) {
+    console.log(contact);
+  };
 
 }

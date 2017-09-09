@@ -5,22 +5,22 @@ import {OnInit} from '@angular/core';
 
 
 @Component({
-  selector:'dashboard',
-  templateUrl:'./dashboard.component.html'
+  selector: 'dashboard',
+  templateUrl: './dashboard.component.html'
 })
 export class DashboardComponent implements OnInit {
 
-  dataService:DataService;
-  dashboardDetails:Dashboard;
+  dataService: DataService;
+  dashboardDetails: Dashboard;
 
 
-  constructor(dataService:DataService) {
+  constructor(dataService: DataService) {
     this.dataService = dataService;
   }
 
 
   ngOnInit() {
-      const type:string = 'json';
+      const type: string = 'json';
       this.dashboardDetails = this.dataService.getDashboardDetails(type);
   }
 

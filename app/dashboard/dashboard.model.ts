@@ -1,21 +1,22 @@
 export class Dashboard {
 
-    name:string;
-    title:string;
-    description1:string;
-    description2:string;
-    description3:string;
+    name: string;
+    title: string;
+    description1: string;
+    description2: string;
+    description3: string;
     // photo 1 , 2 & logo 1 , 2 are relative path to the images to be shown in the dashboard pane
-    photo1:string;
-    photo2:string;
-    logo1:string;
-    logo2:string;
+    photo1: string;
+    photo2: string;
+    logo1: string;
+    logo2: string;
     // the highlights that will be shown as chips
-    highlights:string[];
+    highlights: string[];
     // link to the github repository
-    github:string;
+    github: string;
 
-    constructor(name:string, title:string, description1:string, description2:string, description3:string, photo1:string, photo2:string, logo1:string, logo2:string, highlights:string[], github:string){
+    constructor(name: string, title: string, description1: string, description2: string,
+        description3: string, photo1: string, photo2: string, logo1: string, logo2: string, highlights: string[], github: string) {
         this.name = name;
         this.title = title;
         this.description1 = description1;

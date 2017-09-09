@@ -1,0 +1,66 @@
+<workexp-list>
+        <!-- for smaller screens -->
+        <div class="container" fxLayout.lt-sx="column" fxShow.gt-sx="false">
+                <div fxFlex="100%" *ngFor="let workexp of workExpList">
+                        <md-card class="example-card" >
+                                <md-card-header>
+                                  <div md-card-avatar class="example-header-image"></div>
+                                  <md-card-title>{{workexp.location}}</md-card-title>
+                                  <md-card-subtitle>
+                                        {{workexp.date}}
+                                  </md-card-subtitle>
+                                </md-card-header>
+                                <md-card-content>
+                                <p>
+                                        <md-chip-list>
+                                                <md-chip *ngFor="let keyword of workexp.keywords">
+                                                        {{keyword}}
+                                                </md-chip>
+                                        </md-chip-list>
+                                    </p>
+                                  <p *ngFor="let highlight of workexp.highlights">
+                                        {{highlight}}
+                                  </p>
+                                </md-card-content>
+                                <md-card-actions>
+                                  <button md-button (click)="onWorkExpBtnClick(workexp)">WEBSITE</button>
+                                </md-card-actions>
+                        </md-card> 
+                </div>
+                <!-- for larger screens -->
+                <div class="container" fxLayout.lt-sx="row" fxShow.gt-sx="true">
+                    <div *ngFor="let workexp of workExpList">
+                        <div fxFlex="50%" >
+                            <md-card class="example-card" >
+                                    <md-card-header>
+                                    <div md-card-avatar class="example-header-image"></div>
+                                    <md-card-title>{{workexp.location}}</md-card-title>
+                                    <md-card-subtitle>
+                                            {{workexp.date}}
+                                    </md-card-subtitle>
+                                    </md-card-header>
+                                    <md-card-content>
+                                    <p>
+                                            <md-chip-list>
+                                                    <md-chip *ngFor="let keyword of workexp.keywords">
+                                                            {{keyword}}
+                                                    </md-chip>
+                                            </md-chip-list>
+                                        </p>
+                                    <p *ngFor="let highlight of workexp.highlights">
+                                            {{highlight}}
+                                    </p>
+                                    </md-card-content>
+                                    <md-card-actions>
+                                    <button md-button (click)="onWorkExpBtnClick(workexp)">WEBSITE</button>
+                                    </md-card-actions>
+                            </md-card> 
+                        </div>
+                        <div fxFlex="50%">
+                            <!-- put the logo here -->
+                            {{workexp.logo}}
+                        </div>
+                    </div>
+                    
+                </div>
+</workexp-list>
