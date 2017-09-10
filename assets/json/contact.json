@@ -1,14 +1,5 @@
 [
   {
-    "name":"gplus",
-    "title":"Google+",
-    "type":"social",
-    "url":"",
-    "icon":"",
-    "showXS":"true",
-    "position":"1"
-  },
-  {
     "name":"linkedIn",
     "title":"Linked In",
     "type":"social",
@@ -16,15 +7,6 @@
     "icon":"",
     "showXS":"true",
     "position":"2"
-  },
-  {
-    "name":"github",
-    "title":"GitHub",
-    "type":"social",
-    "url":"",
-    "icon":"",
-    "showXS":"true",
-    "position":"3"
   },
   {
     "name":"medium",

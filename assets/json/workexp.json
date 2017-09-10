@@ -1,20 +1,20 @@
 [
   {
-    "company":"",
+    "company":"FIS",
     "logo":"",
-    "title":"",
-    "keywords":[],
-    "highlights":[],
-    "location":"",
-    "date":""
+    "title":"Specialist - Product Development",
+    "keywords":["struts","hibernate","spring","java/j2ee","angularjs","logi bi","kendo-ui","capital markets"],
+    "highlights":["Portal developer for FIS InTrader product","Migrated old UI written in struts/jsp to SPA with angularjs , jersey REST & kendo ui","Developed BI charts using Logi Info for various portal products"],
+    "location":"Bangalore, IN",
+    "date":"Since May 2013"
   },
   {
-    "company":"",
+    "company":"Aricent",
     "logo":"",
-    "title":"",
-    "keywords":[],
-    "highlights":[],
-    "location":"",
-    "date":""
+    "title":"Technical Lead",
+    "keywords":["struts","hibernate","spring","java/j2ee","interconnect billing","EMS"],
+    "highlights":["My First Job, started my career as a Functional Tester","Tested Alcatel Lucent's WiMax OMCR","Worked as a developer for ClearWire, writing SOAP web services in Java","Worked as a portal developer for Aricent's Interconnect billing product","Wored at Uninor, Gurgoan to help implement Aricent's Interconnect billing"],
+    "location":"Bangalore, IN",
+    "date":"Sept 2006 to May 2013"
   }
 ]

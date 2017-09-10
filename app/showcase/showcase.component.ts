@@ -12,7 +12,7 @@ export class ShowcaseComponent implements OnInit {
 
   dataService: DataService;
   showcaseList: Showcase[];
-
+  isInitialized: Boolean = false;
 
   constructor(dataService: DataService) {
     this.dataService = dataService;
@@ -21,7 +21,10 @@ export class ShowcaseComponent implements OnInit {
 
   ngOnInit() {
       const type: string = 'json';
-      this.showcaseList = this.dataService.getShowcaseList(type);
+      this.dataService.getShowcaseList(type).subscribe(data => {
+        this.showcaseList = data;
+        this.isInitialized = true;
+      });
   }
 
   onShowcaseBtnClick = function(showcase){

@@ -13,6 +13,7 @@ export class WorkExpComponent implements OnInit {
   dataService: DataService;
   workExpList: WorkExp[];
   workExpColumnWidth: Number;
+  isInitialized: Boolean = false;
 
   constructor(dataService: DataService) {
     this.dataService = dataService;
@@ -21,8 +22,11 @@ export class WorkExpComponent implements OnInit {
 
   ngOnInit() {
       const type: string = 'json';
-      this.workExpList = this.dataService.getWorkExpList(type);
-      this.workExpColumnWidth = this.workExpList.length / 100;
+      this.dataService.getWorkExpList(type).subscribe(data => {
+        this.workExpList = data;
+        this.workExpColumnWidth = 100 / this.workExpList.length;
+        this.isInitialized = true;
+      });
   }
 
   onWorkExpBtnClick = function(workexp) {

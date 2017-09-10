@@ -13,7 +13,7 @@ export class ArticlesComponent implements OnInit {
   dataService: DataService;
   publishedArticles: Article[];
   unpublishedArticles: Article[];
-
+  isInitialized: Boolean = false;
 
   constructor(dataService: DataService) {
     this.dataService = dataService;
@@ -22,9 +22,11 @@ export class ArticlesComponent implements OnInit {
 
   ngOnInit() {
       const type: string = 'json';
-      const articles: Article[] = this.dataService.getArticlesList(type);
-      this.publishedArticles = this.dataService.getPublishedArticlesList(articles);
-      this.unpublishedArticles = this.dataService.getUnPublishedArticlesList(articles);
+      this.dataService.getArticlesList(type).subscribe(data => {
+        this.publishedArticles = this.dataService.getPublishedArticlesList(data);
+        this.unpublishedArticles = this.dataService.getUnPublishedArticlesList(data);
+        this.isInitialized = true;
+      });
   }
 
   onArticleBtnClick = function(article, type) {

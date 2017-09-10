@@ -13,6 +13,7 @@ export class ContactComponent implements OnInit {
   dataService: DataService;
   contacts: Contact[];
   contactColumnWidth: Number;
+  isInitialized: Boolean = false;
 
   constructor(dataService: DataService) {
     this.dataService = dataService;
@@ -21,8 +22,11 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {
       const type: string = 'json';
-      this.contacts = this.dataService.getContactList(type);
-      this.contactColumnWidth = this.contacts.length / 100;
+      this.dataService.getContactList(type).subscribe(data => {
+        this.contacts = data;
+        this.contactColumnWidth = 100 / this.contacts.length;
+        this.isInitialized = true;
+      });
   }
 
   onContactClick = function(contact) {

@@ -1,4 +1,4 @@
-<div class="container" fxLayout.gt-sm="column" fxLayout.lt-sm="row">
+<div class="container" fxLayout="column"  *ngIf="isInitialized == true">
     <!-- image -->
     <div fxFlex="100%">
             <img [src] = "dashboardDetails.photo1">
@@ -8,12 +8,20 @@
         <p>
             <img [src] = "dashboardDetails.logo1">
         </p>
+        <p>
             {{dashboardDetails.title}}
         </p>
         <p>
             {{dashboardDetails.description1}}
         </p>
+        <p>
+            {{dashboardDetails.description2}}
+        </p>
     </div>
+    <!-- git hub button -->
+    <div fxFlex="100%">
+            <button md-raised-button (click)="onGithubBtnClick(dashboardDetails)">GITHUB</button>
+        </div>
     <!-- chips -->
     <div fxFlex="100%">
         <md-chip-list>
@@ -21,4 +29,5 @@
                         {{keyword}}
                 </md-chip>
         </md-chip-list>
+    </div>
 </div>

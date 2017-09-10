@@ -1,8 +1,8 @@
 {
   "name":"UMESH KUMAR K",
   "title":"The Tentative Techie",
-  "description1":"",
-  "description2":"",
+  "description1":"- a fast bowler, ctrl + c & ctrl + v programmer and ... a tentative human",
+  "description2":"I'm Umesh Kumar K,a software developer who learnt things the wrong way & now i'm trying to unlearn and learn and will capture these experiences in my blog",
   "description3":"",
   "photo1":"",
   "photo2":"",
@@ -11,5 +11,5 @@
   "highlights":[
       "java/j2ee","angular","angular material","ionic","javascript"
   ],
-  "github":""
+  "github":"https://github.com/thetentativetechie"
 }

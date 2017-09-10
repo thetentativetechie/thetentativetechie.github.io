@@ -8,7 +8,7 @@
   {
     "id":"article",
     "title":"Articles",
-    "route":"/article",
+    "route":"/articles",
     "icon":""
   },
   {

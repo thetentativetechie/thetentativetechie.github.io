@@ -1,29 +1,28 @@
-<showcase-list>
-        <div class="container" fxLayout="column">
-            <div fxFlex="100%" *ngFor="let showcase of showcaseList">
-                    <md-card class="example-card" >
-                            <md-card-header>
-                              <div md-card-avatar class="example-header-image"></div>
-                              <md-card-title>{{showcase.title}}</md-card-title>
-                              <md-card-subtitle>
-                                    {{showcase.description}}
-                              </md-card-subtitle>
-                            </md-card-header>
-                            <md-card-content>
-                              <p>
-                                    {{showcase.description2}}
-                              </p>
-                              <p>
-                                    <md-chip-list>
-                                            <md-chip *ngFor="let keyword of showcase.keywords">
-                                                    {{keyword}}
-                                            </md-chip>
-                                    </md-chip-list>
-                              </p>
-                            </md-card-content>
-                            <md-card-actions>
-                              <button md-button (click)="onShowcaseBtnClick(showcase)">DEMO</button>
-                            </md-card-actions>
-                    </md-card> 
-            </div>
-</showcase-list>
+<div class="container" fxLayout="column" *ngIf="isInitialized == true">
+        <div fxFlex="100%" *ngFor="let showcase of showcaseList">
+                <md-card class="example-card" >
+                        <md-card-header>
+                        <div md-card-avatar class="example-header-image"></div>
+                        <md-card-title>{{showcase.title}}</md-card-title>
+                        <md-card-subtitle>
+                                {{showcase.description}}
+                        </md-card-subtitle>
+                        </md-card-header>
+                        <md-card-content>
+                        <p>
+                                {{showcase.description2}}
+                        </p>
+                        <p>
+                                <md-chip-list>
+                                        <md-chip *ngFor="let keyword of showcase.keywords">
+                                                {{keyword}}
+                                        </md-chip>
+                                </md-chip-list>
+                        </p>
+                        </md-card-content>
+                        <md-card-actions>
+                        <button md-button (click)="onShowcaseBtnClick(showcase)">DEMO</button>
+                        </md-card-actions>
+                </md-card> 
+        </div>
+</div>

@@ -13,6 +13,7 @@ export class NavigationComponent implements OnInit {
   dataService: DataService;
   navigationList: Navigation[];
   navigationItemWidth: Number;
+  isInitialized: Boolean = false;
 
   constructor(dataService: DataService) {
     this.dataService = dataService;
@@ -21,9 +22,12 @@ export class NavigationComponent implements OnInit {
 
   ngOnInit() {
       const type: string = 'json';
-      this.navigationList = this.dataService.getNavigationList(type);
-      // space the navigation items equally
-      this.navigationItemWidth = (this.navigationList.length / 100);
+      this.dataService.getNavigationList(type).subscribe(data => {
+        this.navigationList = data;
+        // space the navigation items equally
+        this.navigationItemWidth = 100 / this.navigationList.length;
+        this.isInitialized = true;
+      });
   }
 
 }

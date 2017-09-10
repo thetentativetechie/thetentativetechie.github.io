@@ -12,6 +12,7 @@ export class DashboardComponent implements OnInit {
 
   dataService: DataService;
   dashboardDetails: Dashboard;
+  isInitialized: Boolean = false;
 
 
   constructor(dataService: DataService) {
@@ -21,7 +22,14 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
       const type: string = 'json';
-      this.dashboardDetails = this.dataService.getDashboardDetails(type);
+      this.dataService.getDashboardDetails(type).subscribe(data => {
+        this.dashboardDetails = data;
+        this.isInitialized = true;
+      });
   }
+
+  onGithubBtnClick = function(dashboardDetails) {
+      console.dir(dashboardDetails);
+  };
 
 }
