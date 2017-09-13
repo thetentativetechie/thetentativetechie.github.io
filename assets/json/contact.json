@@ -1,10 +1,19 @@
 [
   {
+    "name":"github",
+    "title":"Github",
+    "type":"social",
+    "url":"",
+    "icon":"fa fa-github fa-lg",
+    "showXS":"true",
+    "position":"2"
+  },
+  {
     "name":"linkedIn",
     "title":"Linked In",
     "type":"social",
     "url":"",
-    "icon":"",
+    "icon":"fa fa-linkedin fa-lg",
     "showXS":"true",
     "position":"2"
   },
@@ -13,7 +22,7 @@
     "title":"Medium",
     "type":"blog",
     "url":"",
-    "icon":"",
+    "icon":"fa fa-medium fa-lg",
     "showXS":"true",
     "position":"4"
   },
@@ -22,7 +31,7 @@
     "title":"Email",
     "type":"social",
     "url":"",
-    "icon":"",
+    "icon":"fa fa-envelope-o fa-lg",
     "showXS":"true",
     "position":"5"
   }

@@ -3,18 +3,24 @@
     "id":"home",
     "title":"Home",
     "route":"/home",
-    "icon":""
+    "icon":"fa fa-home fa-lg"
   },
   {
     "id":"article",
     "title":"Articles",
     "route":"/articles",
-    "icon":""
+    "icon":"fa fa-book fa-lg"
   },
   {
     "id":"showcase",
     "title":"ShowCase",
     "route":"/showcase",
-    "icon":""
+    "icon":"fa fa-desktop fa-lg"
+  },
+  {
+    "id":"about",
+    "title":"About Me",
+    "route":"/about",
+    "icon":"fa fa-user fa-lg"
   }
 ]

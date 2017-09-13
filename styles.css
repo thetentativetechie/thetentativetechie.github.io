@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    font-family: "Roboto", 'Helvetica Neue, Helvetica, Arial';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    background: #eeeeee;
+}
+
+.primary-background {
+    background: #e53935;
+    color:#ffffff;
+}
+
+.secondary-background {
+    background: #ffffff;
+}
+
+.about-me-card {
+    margin: 25px 0;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.14);
+    border-radius: 6px;
+    color: rgba(0,0,0,.87);
+    background: #fff;
+}
+
+.about-me-card-div-upper {
+    height: 135px;
+    overflow: hidden;
+}
+
+
+.about-me-card-div-lower {
+    border-radius: 50%;
+    display: block;
+    height: 120px;
+    margin: -55px auto 0;
+    overflow: hidden;
+    width: 120px;
+}
+
+.about-me-card-avatar {
+    background: none repeat scroll 0 0 #FFFFFF;
+    width: 100%;
+}

@@ -1,18 +1,17 @@
-<div class="container" fxLayout.gt-md="row" fxLayout.lt-md="column">
-    <div fxFlex.gt-sm="30%" fxFlex.lt-sm="100%">
+<div class="container" fxLayout="column">
+    <div fxFlex ="space-around" class="primary-background">
        <!-- navigation -->   
       <navigation-list>
       </navigation-list>
-       <!-- contact -->
-      <contact-list>
-      </contact-list> 
-      <!-- profile details -->
-      <dashboard>
-      </dashboard> 
     </div>
-    <div fxFlex.gt-sm="70%" fxFlex.lt-sm="100%">
-      <!-- router outlet-->
-      <router-outlet></router-outlet>
+    <div fxFlex="space-around" class="secondary-background">
+        <!-- router outlet-->
+        <router-outlet></router-outlet>
+    </div>
+    <div fxFlex ="space-around" class="primary-background">
+    <!-- contact -->
+      <contact-list>
+      </contact-list>
     </div>
 </div>
 
