@@ -1,0 +1,23 @@
+<div class="sticky-note-container">
+    <div class="sticky-note">
+        <!-- sticky note pin img -->
+        <div class="sticky-note-pin">
+            
+        </div>
+        <!-- sticky note header -->
+        <div class="sticky-note-header"> 
+            <span>
+                {{stickynotetext.noteHeading}}
+            </span>
+        </div>
+        <!-- sticky note body -->
+        <div class="sticky-note-content">
+            <p *ngFor="let content of stickynotetext.noteContentText">
+                <span>
+                    {{content}}
+                </span>
+            </p>
+        </div>
+
+    </div>
+</div>

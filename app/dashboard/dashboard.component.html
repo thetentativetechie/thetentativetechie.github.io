@@ -22,6 +22,7 @@
     </div>
     <!-- heading -->
     <div fxFlex.gt-xs="30%" fxFlex.lt-sm="100%">
+        
         <md-card>
             <div class="about-me-card-div-upper">
                 <!-- the tentative techie logo comes here -->
@@ -42,23 +43,52 @@
     </div>
     <!-- chips -->
     <div fxFlex.gt-xs="30%" fxFlex.lt-sm="100%" fxLayoutAlign="stretch">
-            <md-card>
-                <md-card-header>
-                    <!-- the tentative techie icon comes here -->
-                    <div md-card-avatar class="example-header-image"></div>
-                    <md-card-title>{{dashboardDetails.description3}}</md-card-title>
-                </md-card-header>
-                <!-- the tentative techie logo comes here -->
-                <img md-card-image [src] = "dashboardDetails.logo1" alt="Logo of The Tentative Techie">
-                <md-card-content>
-                    <md-chip-list>
-                            <md-chip *ngFor="let keyword of dashboardDetails.highlights">
-                                    {{keyword}}
-                            </md-chip>
-                    </md-chip-list>
-                </md-card-content>
-                <md-card-actions>
-                </md-card-actions>
-            </md-card>
+        <div class="cube-container">
+            <div class="cube">
+                <div class="front">
+              <p>
+                <span class="cube-span">
+                  <b>FRONT</b>
+                </span>
+              </p>
+                </div>
+                <div class="back">
+                  <p>
+                <span class="cube-span">
+                  <b>BACK</b>
+                </span>
+              </p>
+                </div>
+                <div class="top">
+                  <p>
+                <span class="cube-span">
+                  <b>TOP</b>
+                </span>
+              </p>
+                </div>
+                <div class="bottom">
+                  <p>
+                <span class="cube-span">
+                  <b>BOTTOM</b>
+                </span>
+              </p>
+                </div>
+                <div class="left">
+                  <p>
+                <span class="cube-span">
+                  <b>LEFT</b>
+                </span>
+              </p>
+                </div>
+                <div class="right">
+                  <p>
+                <span class="cube-span">
+                  <b>RIGHT</b>
+                </span>
+              </p>
+                </div>
+            </div>
+        </div>
     </div>
+            
 </div>
