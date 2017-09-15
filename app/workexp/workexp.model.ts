@@ -1,3 +1,5 @@
+import {StickyNote} from '../common/model/stickynote.model';
+
 export class WorkExp {
 
   company: string;
@@ -5,17 +7,18 @@ export class WorkExp {
   logo: string;
   title: string;
   // list of keywords that will be displayed as chips
-  keywords: string[];
-  // list of highlights that will be displayed as list items
-  highlights: string[];
+  keyhighlights: StickyNote[];
+  // list of highlights that will be displayed as stickynotes
+  highlights: StickyNote[];
   location: string;
   date: string;
 
-  constructor(company: string, logo: string, title: string, keywords: string[], highlights: string[], location: string, date: string) {
+  constructor(company: string, logo: string, title: string, keyhighlights: StickyNote[],
+    highlights: StickyNote[], location: string, date: string) {
       this.company = company;
       this.logo = logo;
       this.title = title;
-      this.keywords = keywords;
+      this.keyhighlights = keyhighlights;
       this.highlights = highlights;
       this.location = location;
       this.date = date;

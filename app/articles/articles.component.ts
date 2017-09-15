@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {DataService} from '../common/dataservice';
 import {Article} from './articles.model';
 import {OnInit} from '@angular/core';
+import {Card} from '../common/model/card.model';
 
 
 @Component({
@@ -14,6 +15,7 @@ export class ArticlesComponent implements OnInit {
   publishedArticles: Article[];
   unpublishedArticles: Article[];
   isInitialized: Boolean = false;
+
 
   constructor(dataService: DataService) {
     this.dataService = dataService;
@@ -28,6 +30,7 @@ export class ArticlesComponent implements OnInit {
         this.isInitialized = true;
       });
   }
+
 
   onArticleBtnClick = function(article, type) {
     console.dir(article);

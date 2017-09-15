@@ -9,5 +9,6 @@ import {StickyNote} from '../model/stickynote.model';
 export class StickyNoteComponent {
 
     @Input() stickynotetext: StickyNote;
+    @Input() stickynoteclass: string;
 
 }

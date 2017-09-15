@@ -10,6 +10,7 @@ import {ShowcaseComponent} from './showcase/showcase.component';
 import {WorkExpComponent} from './workexp/workexp.component';
 import {PageNotFoundComponent} from './common/not-found.component';
 import {StickyNoteComponent} from './common/component/stickynote.component';
+import {FlipCard} from './common/component/flipcard.component';
 
 import {DataService} from './common/dataservice';
 import {FlexLayoutModule} from '@angular/flex-layout';
@@ -27,7 +28,8 @@ import {CustomMaterialModule} from './common/material.module';
     ShowcaseComponent,
     WorkExpComponent,
     PageNotFoundComponent,
-    StickyNoteComponent
+    StickyNoteComponent,
+    FlipCard
   ],
   imports: [
     BrowserModule,

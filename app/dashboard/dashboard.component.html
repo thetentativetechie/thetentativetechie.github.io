@@ -1,6 +1,6 @@
 <div class="container" fxLayout.gt-xs="row" fxLayout.lt-md="column" fxLayoutGap="20px" *ngIf="isInitialized == true">
     <!-- image -->
-    <div fxFlex.gt-xs="30%" fxFlex.lt-sm="100%">
+    <div fxFlex.gt-xs="30%" fxFlex.lt-sm="100%" fxLayoutAlign="stretch">
             <md-card>
                 <md-card-header>
                     <!-- the tentative techie icon comes here -->
@@ -21,8 +21,7 @@
             </md-card>
     </div>
     <!-- heading -->
-    <div fxFlex.gt-xs="30%" fxFlex.lt-sm="100%">
-        
+    <div fxFlex.gt-xs="30%" fxFlex.lt-sm="100%" fxLayoutAlign="stretch">
         <md-card>
             <div class="about-me-card-div-upper">
                 <!-- the tentative techie logo comes here -->
@@ -43,52 +42,7 @@
     </div>
     <!-- chips -->
     <div fxFlex.gt-xs="30%" fxFlex.lt-sm="100%" fxLayoutAlign="stretch">
-        <div class="cube-container">
-            <div class="cube">
-                <div class="front">
-              <p>
-                <span class="cube-span">
-                  <b>FRONT</b>
-                </span>
-              </p>
-                </div>
-                <div class="back">
-                  <p>
-                <span class="cube-span">
-                  <b>BACK</b>
-                </span>
-              </p>
-                </div>
-                <div class="top">
-                  <p>
-                <span class="cube-span">
-                  <b>TOP</b>
-                </span>
-              </p>
-                </div>
-                <div class="bottom">
-                  <p>
-                <span class="cube-span">
-                  <b>BOTTOM</b>
-                </span>
-              </p>
-                </div>
-                <div class="left">
-                  <p>
-                <span class="cube-span">
-                  <b>LEFT</b>
-                </span>
-              </p>
-                </div>
-                <div class="right">
-                  <p>
-                <span class="cube-span">
-                  <b>RIGHT</b>
-                </span>
-              </p>
-                </div>
-            </div>
-        </div>
+        <flip-card [frontCard]="frontCard" [backCard]="backCard" class="flip-card"></flip-card>
     </div>
             
 </div>

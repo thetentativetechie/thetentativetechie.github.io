@@ -1,7 +1,7 @@
 [
   {
     "id":"home",
-    "title":"Home",
+    "title":"Work",
     "route":"/home",
     "icon":"fa fa-home fa-lg"
   },

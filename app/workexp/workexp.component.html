@@ -1,39 +1,30 @@
 <!-- for smaller screens -->
 <div *ngIf="isInitialized == true">
-        <div class="container" fxLayout="row" fxLayout.xs="column"  *ngFor="let workexp of workExpList">
                 
-                <div fxFlex="50%" fxFlex.xs="100%">
-                        <md-card class="example-card" >
-                                <md-card-header>
-                                        <div md-card-avatar class="example-header-image"></div>
-                                        <md-card-title>
-                                                <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
-                                                {{workexp.location}}
-                                        </md-card-title>
-                                        <md-card-subtitle>
-                                                <i class="fa fa-calendar fa-lg" aria-hidden="true"></i>
-                                                {{workexp.date}}
-                                        </md-card-subtitle>
-                                </md-card-header>
-                                <md-card-content>
-                                <p>
-                                        <md-chip-list >
-                                                <md-chip *ngFor="let keyword of workexp.keywords" >
-                                                        {{keyword}}
-                                                </md-chip>
-                                        </md-chip-list>
-                                        </p>
-                                        <p *ngFor="let highlight of workexp.highlights">
-                                        {{highlight}}
-                                        </p>
-                                </md-card-content>
-                                <md-card-actions>
-                                        <button md-button (click)="onWorkExpBtnClick(workexp)">WEBSITE</button>
-                                </md-card-actions>
-                        </md-card> 
-                </div>
-                <div fxFlex="50%" fxFlex.xs="100%">
-                        <sticky-note [stickynotetext]="stickynotetext"></sticky-note>
+        <div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center">
+                <div fxFlex="100%">
+                        <md-toolbar class="primary-color">Career Timeline</md-toolbar>                
                 </div>
         </div>
+
+        <!-- highlights -->
+        <div class="container" fxLayout="row" fxLayout.xs="column"  *ngFor="let workexp of workExpList">
+                <div fxFlex="25%" fxFlex.xs="100%" *ngFor="let stickynotetext of workexp.highlights">
+                        <sticky-note [stickynotetext]="stickynotetext" stickynoteclass="sticky-note-yellow"></sticky-note>
+                </div>
+        </div>
+
+
+        <div class="container" fxLayout="row" fxLayout.xs="column">
+                <div fxFlex="100%" >
+                        <md-toolbar class="primary-color">Highlights</md-toolbar>                
+                </div>
+        </div>
+
+        <!-- key highlights -->
+        <div class="container" fxLayout="row" fxLayout.xs="column">
+                <div fxFlex="30%" fxFlex.xs="100%" *ngFor="let stickynotetext of keyHighlights">
+                        <sticky-note [stickynotetext]="stickynotetext" stickynoteclass="sticky-note-red"></sticky-note>
+                </div>
+        </div>                
 </div>

@@ -40,9 +40,25 @@ body {
     width: 120px;
 }
 
+.about-me-card-div-lower:hover {
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -o-transform: scale(2);
+}
+
 .about-me-card-avatar {
     background: none repeat scroll 0 0 #FFFFFF;
     width: 100%;
 }
 
 
+.primary-color {
+    background-color:#e53935;
+    color:#FFFFFF;
+    opacity:1;
+}
+
+.empty-div {
+    height:40px;
+    background-color: #eeeeee;
+}

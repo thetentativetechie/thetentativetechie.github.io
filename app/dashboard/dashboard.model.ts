@@ -1,3 +1,5 @@
+import {Card} from '../common/model/card.model';
+
 export class Dashboard {
 
     name: string;
@@ -19,12 +21,15 @@ export class Dashboard {
     highlights: string[];
     // link to the github repository
     github: string;
-    credits:string[];
+    credits: string[];
+    flipcardFront: Card;
+    flipcardBack: Card;
+
 
     constructor(name: string, title: string, description1: string, description2: string,
         description3: string, description4: string, description5: string, description6:
         string, photo1: string, photo2: string, photo3: string, photo4: string,
-        logo1: string, logo2: string, highlights: string[], github: string, credits: string[]) {
+        logo1: string, logo2: string, highlights: string[], github: string, credits: string[], flipcardFront: Card, flipcardBack: Card) {
         this.name = name;
         this.title = title;
         this.description1 = description1;
@@ -42,5 +47,7 @@ export class Dashboard {
         this.highlights = highlights;
         this.github = github;
         this.credits = credits;
+        this.flipcardFront = flipcardFront;
+        this.flipcardBack = flipcardBack;
     }
 }

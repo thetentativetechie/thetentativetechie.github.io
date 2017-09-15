@@ -17,5 +17,41 @@
       "java/j2ee","angular","angular material","ionic","javascript"
   ],
   "github":"https://github.com/thetentativetechie",
-  "credits":[]
+  "credits":[],
+  "flipcardFront":{
+    "headerType":"img",
+    "headerContent":"assets/img/card_photo_1.jpg",
+    "avatarType":"img",
+    "avatarContent":"assets/img/avatar.jpg",
+    "bodyTitle": "Umesh Kumar K",
+    "bodyDescription": ["Software Engineer II ,Fidelity Information Services"," a fast bowler, ctrl + c & ctrl + v programmer and ... a tentative human"],
+    "frontBtnLabel":"View More Details..",
+    "frontBtnIcon":"",
+    "actionBtnLabel":"",
+    "actionBtnLink":"",
+    "actionBtn1Label":"",
+    "actionBtn1Link":"",
+    "backBtnLabel":"",
+    "backBtnIcon":"",
+    "height":"300px",
+    "width":""
+  },
+  "flipcardBack":{
+    "headerType":"",
+    "headerContent":"",
+    "avatarType":"",
+    "avatarContent":"",
+    "bodyTitle": "Full Stack Developer",
+    "bodyDescription": ["Bookmark my site","I will blog my experiences in trying different technologies,frameworks"],
+    "frontBtnLabel":"",
+    "frontBtnIcon":"",
+    "actionBtnLabel":"GITHUB",
+    "actionBtnLink":"https://github.com/thetentativetechie",
+    "actionBtn1Label":"MEDIUM",
+    "actionBtn1Link":"https://github.com/thetentativetechie",
+    "backBtnLabel":"Back",
+    "backBtnIcon":"",
+    "height":"300px",
+    "width":""
+  }
 }
