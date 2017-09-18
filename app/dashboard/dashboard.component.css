@@ -6,3 +6,37 @@
     -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
     box-shadow:10px 10px 7px rgba(0,0,0,.7);
 }
+.facebook {
+    background-color: #3B5998;
+}
+.twitter {
+    background-color: #1B95E0;
+}
+.linkedin {
+    background-color: #0077B5;
+}
+.gplus {
+    background-color: #DD4B39;
+}
+.follow-me-card {
+    width: 100%;
+    margin-top:20px;
+    -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    height: 400px;  
+    margin-bottom:20px;  
+}
+.image-chip-card-container {
+    width: 100%;
+    margin-top:20px;
+    -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    height: 400px;  
+    margin-bottom:20px;
+}
+.image-chip-title {
+    margin-bottom:  2px #424242;
+    height: 100px;
+}

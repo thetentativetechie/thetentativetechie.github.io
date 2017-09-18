@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {DataService} from '../common/dataservice';
 import {Article} from './articles.model';
+import {ArticleCard} from './articlecard.model';
 import {OnInit} from '@angular/core';
 import {Card} from '../common/model/card.model';
 
@@ -12,8 +13,8 @@ import {Card} from '../common/model/card.model';
 export class ArticlesComponent implements OnInit {
 
   dataService: DataService;
-  publishedArticles: Article[];
-  unpublishedArticles: Article[];
+  publishedArticles: ArticleCard[];
+  unpublishedArticles: ArticleCard[];
   isInitialized: Boolean = false;
 
 

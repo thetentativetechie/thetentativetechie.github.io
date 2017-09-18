@@ -23,7 +23,7 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
       const type: string = 'json';
       this.dataService.getContactList(type).subscribe(data => {
-        this.contacts = data;
+        this.contacts = this.dataService.getFooterContactList(data);
         this.contactColumnWidth = 100 / this.contacts.length;
         this.isInitialized = true;
       });

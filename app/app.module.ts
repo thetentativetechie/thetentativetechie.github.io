@@ -11,6 +11,8 @@ import {WorkExpComponent} from './workexp/workexp.component';
 import {PageNotFoundComponent} from './common/not-found.component';
 import {StickyNoteComponent} from './common/component/stickynote.component';
 import {FlipCard} from './common/component/flipcard.component';
+import {ImageChipComponent} from './common/component/imagechip.component';
+
 
 import {DataService} from './common/dataservice';
 import {FlexLayoutModule} from '@angular/flex-layout';
@@ -29,7 +31,8 @@ import {CustomMaterialModule} from './common/material.module';
     WorkExpComponent,
     PageNotFoundComponent,
     StickyNoteComponent,
-    FlipCard
+    FlipCard,
+    ImageChipComponent
   ],
   imports: [
     BrowserModule,

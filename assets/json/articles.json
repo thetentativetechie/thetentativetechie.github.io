@@ -6,7 +6,8 @@
     "codeLink":"",
     "blogLink":"",
     "status":"draft",
-    "date":""
+    "date":"",
+    "avatar":"assets/img/angular.svg"
   },
   {
     "title":"AngularJS Hello World",
@@ -15,7 +16,8 @@
     "codeLink":"",
     "blogLink":"",
     "status":"draft",
-    "date":""
+    "date":"",
+    "avatar":"assets/img/angular.svg"
   },
   {
     "title":"NativeScript Hello World",
@@ -24,7 +26,8 @@
     "codeLink":"",
     "blogLink":"",
     "status":"draft",
-    "date":""
+    "date":"",
+    "avatar":"assets/img/nativescript.png"
   },
   {
     "title":"Ionic Hello World",
@@ -33,6 +36,7 @@
     "codeLink":"",
     "blogLink":"",
     "status":"draft",
-    "date":""
+    "date":"",
+    "avatar":"assets/img/ionic.png"    
   }
 ]

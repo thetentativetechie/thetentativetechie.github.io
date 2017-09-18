@@ -1,94 +1,16 @@
 
-<!-- for large screens show the articles as a  ng material List component -->
-<!-- for smaller screens show the articles as a ng material Card component -->
-
-<!-- large screens -->
-<div class="container" fxLayout="row" fxShow.lt-sm="false" *ngIf="isInitialized == true">
-    <div fxFlex="100%">
-            <md-list>
-                    <h3 md-subheader>Published</h3>
-                    <md-list-item *ngFor="let article of publishedArticles">
-                        <h4 md-line>{{article.title}}</h4>
-                        <p md-line> {{article.description}}</p>
-                        <p md-line> 
-                            <!-- show the keywords as chips -->
-                            <md-chip-list>
-                                <md-chip *ngFor="let keyword of article.keywords">
-                                        {{keyword}}
-                                </md-chip>
-                        </md-chip-list>
-                        </p>
-                        <p md-line>
-                            <button md-raised-button (click)="onArticleBtnClick(article,'code')"> CODE </button>
-                            <button md-raised-button (click)="onArticleBtnClick(article,'blog')"> BLOG </button>
-                        </p>
-                    </md-list-item>
-
-                    <md-divider></md-divider>
-
-                    <h3 md-subheader>Coming Soon</h3>
-                    <md-list-item *ngFor="let article of unpublishedArticles">
-                        <h4 md-line>{{article.title}}</h4>
-                        <p md-line> {{article.description}}</p>
-                        <p md-line> 
-                            <!-- show the keywords as chips -->
-                            <md-chip-list>
-                                <md-chip *ngFor="let keyword of article.keywords">
-                                        {{keyword}}
-                                </md-chip>
-                        </md-chip-list>
-                        </p>
-                    </md-list-item>
-                    
-            </md-list>
-    </div>
-</div>
-
-<!-- small screens -->
-<div class="container" fxLayout="column" fxShow.gt-sm="false" *ngIf="isInitialized == true">
-    <div fxFlex="100%" *ngFor="let article of unpublishedArticles">
-            <md-card class="example-card" >
-                    <md-card-header>
-                        <div md-card-avatar class="example-header-image"></div>
-                        <md-card-title>{{article.title}}</md-card-title>
-                        <md-card-subtitle>
-                            <!-- show the list of keywords -->
-                            <span *ngFor="let keyword of article.keywords">
-                                {{keyword}}
-                            </span>
-                        </md-card-subtitle>
-                    </md-card-header>
-                    <md-card-content>
-                        <p>
-                            {{article.description}}
-                        </p>
-                    </md-card-content>
-            </md-card>        
-        
+<div *ngIf="isInitialized == true">
+    <!-- published articles -->
+    <div class="container" fxLayout="column" *ngFor="let article of publishedArticles">
+        <div fxFlex="50%">
+            <flip-card [frontCard]="article.frontCard" [backCard]="article.backCard" class="flip-card" ></flip-card>        
         </div>
-</div>
-<div class="container" fxLayout="column" fxShow.gt-sm="false" *ngIf="isInitialized == true">
-        <div fxFlex="100%" *ngFor="let article of publishedArticles">
-            <md-card class="example-card" >
-                    <md-card-header>
-                        <div md-card-avatar class="example-header-image"></div>
-                        <md-card-title>{{article.title}}</md-card-title>
-                        <md-card-subtitle>
-                            <!-- show the list of keywords -->
-                            <span *ngFor="let keyword of article.keywords">
-                                {{keyword}}
-                            </span>
-                        </md-card-subtitle>
-                    </md-card-header>
-                    <md-card-content>
-                        <p>
-                            {{article.description}}
-                        </p>
-                    </md-card-content>
-                    <md-card-actions>
-                        <button md-button (click)="onArticleBtnClick(article,'code')">CODE</button>
-                        <button md-button (click)="onArticleBtnClick(article,'code')">BLOG</button>
-                    </md-card-actions>
-            </md-card>
+    </div>
+
+    <!-- unpublished articles -->
+    <div class="container" fxLayout="column" *ngFor="let article of unpublishedArticles">
+        <div fxFlex="50%">
+            <flip-card [frontCard]="article.frontCard" [backCard]="article.backCard" class="flip-card" ></flip-card>        
+        </div>
     </div>
 </div>

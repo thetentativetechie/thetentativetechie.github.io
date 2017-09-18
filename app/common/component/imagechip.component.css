@@ -1,0 +1,20 @@
+.image-chip {
+    height: 40px;
+    width:140px;
+    padding: 0 25px;
+    line-height: 40px;
+    border-radius: 20px;
+    background-color: #e53935;
+    margin: 10px;
+    color: #FFFFFF;
+    opacity: 0.9;
+    text-transform: uppercase;    
+}
+.image-chip-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 55%;
+    float: left;
+    margin: 0 10px 0 -25px;
+    padding: 0 2px;
+}

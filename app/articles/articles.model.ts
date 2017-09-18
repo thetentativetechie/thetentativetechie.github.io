@@ -7,8 +7,10 @@ export class Article {
     status: string;
     // article published date
     date: Date;
+    avatar: string;
 
-    constructor(title: string, description: string, keywords: string[], codeLink: string, blogLink: string, status: string, date: Date) {
+    constructor(title: string, description: string, keywords: string[], codeLink: string, blogLink: string,
+        status: string, date: Date, avatar: string) {
         this.title = title;
         this.description = description;
         this.keywords = keywords;
@@ -16,6 +18,7 @@ export class Article {
         this.blogLink = blogLink;
         this.status = status;
         this.date = date;
+        this.avatar = avatar;
     }
 
 }

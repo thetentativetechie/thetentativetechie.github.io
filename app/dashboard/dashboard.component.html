@@ -1,48 +1,41 @@
 <div class="container" fxLayout.gt-xs="row" fxLayout.lt-md="column" fxLayoutGap="20px" *ngIf="isInitialized == true">
     <!-- image -->
     <div fxFlex.gt-xs="30%" fxFlex.lt-sm="100%" fxLayoutAlign="stretch">
-            <md-card>
-                <md-card-header>
-                    <!-- the tentative techie icon comes here -->
-                    <div md-card-avatar class="example-header-image"></div>
-                    <md-card-title>{{dashboardDetails.title}}</md-card-title>
-                    <md-card-subtitle>{{dashboardDetails.description1}}</md-card-subtitle>
-                </md-card-header>
-                <!-- the tentative techie logo comes here -->
-                <img md-card-image [src] = "dashboardDetails.logo1" alt="Logo of The Tentative Techie">
-                <md-card-content>
-                    <p>
-                        {{dashboardDetails.description2}}
-                    </p>
-                </md-card-content>
-                <md-card-actions>
-                    <button md-button>GITHUB</button>
-                </md-card-actions>
-            </md-card>
-    </div>
-    <!-- heading -->
-    <div fxFlex.gt-xs="30%" fxFlex.lt-sm="100%" fxLayoutAlign="stretch">
-        <md-card>
-            <div class="about-me-card-div-upper">
-                <!-- the tentative techie logo comes here -->
-                <img md-card-image [src] = "dashboardDetails.photo1" alt="Background Photo">
+            <div class="follow-me-card">
+                <md-card *ngIf="isContactInitialized == true" class="follow-me-card">
+                        <md-card-header>
+                            <!-- the tentative techie icon comes here -->
+                            <div md-card-avatar class="example-header-image"></div>
+                            <md-card-title>Follow Me</md-card-title>
+                        </md-card-header>
+        
+                        <!-- different follow me btns come here --> 
+                        <md-card-content>
+                            <p *ngFor="let contact of contacts">
+                                <a md-fab [class]="contact.name">
+                                    <i [class]="contact.icon" aria-hidden="true"></i>
+                                </a>
+                                <span>{{contact.title}}</span>
+                            </p>
+                        </md-card-content>
+                    </md-card>
             </div>
-            <div class="about-me-card-div-lower">
-                <img  [src] = "dashboardDetails.photo2" alt="Avatar" class="about-me-card-avatar">
-            </div>
-            <md-card-content>
-                <p>
-                    {{dashboardDetails.description2}}
-                </p>
-            </md-card-content>
-            <md-card-actions>
-                <button md-button>GITHUB</button>
-            </md-card-actions>
-        </md-card>
     </div>
-    <!-- chips -->
+   
+    <!-- Flip Card-->
     <div fxFlex.gt-xs="30%" fxFlex.lt-sm="100%" fxLayoutAlign="stretch">
         <flip-card [frontCard]="frontCard" [backCard]="backCard" class="flip-card"></flip-card>
     </div>
-            
+    
+    <!-- Front End Developer Chips-->
+    <div fxFlex.gt-xs="30%" fxFlex.lt-sm="100%" fxLayoutAlign="stretch">
+            <div class="image-chip-card-container">
+                <div class="image-chip-title">
+                    <span>Full Stack Developer</span>
+                </div>
+                    <div class="image-chip-card" *ngFor="let keyword of keywords">
+                        <image-chip [imagechip]="keyword"></image-chip>
+                </div>
+            </div>
+    </div>
 </div>

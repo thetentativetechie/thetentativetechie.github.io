@@ -1,8 +1,44 @@
 [
   {
+    "name":"facebook",
+    "title":"Facebook",
+    "type":"followme",
+    "url":"",
+    "icon":"fa fa-facebook-official fa-lg",
+    "showXS":"true",
+    "position":"2"
+  },
+  {
+    "name":"linkedin",
+    "title":"Linked In",
+    "type":"followme",
+    "url":"",
+    "icon":"fa fa-linkedin-square fa-lg",
+    "showXS":"true",
+    "position":"2"
+  },
+  {
+    "name":"twitter",
+    "title":"Twitter",
+    "type":"followme",
+    "url":"",
+    "icon":"fa fa-twitter-square fa-lg",
+    "showXS":"true",
+    "position":"2"
+  },
+  {
+    "name":"gplus",
+    "title":"Google Plus",
+    "type":"followme",
+    "url":"",
+    "icon":"fa fa-google-plus-square fa-lg",
+    "showXS":"true",
+    "position":"2"
+  },
+  {
     "name":"github",
     "title":"Github",
-    "type":"social",
+    "type":"footer",
     "url":"",
     "icon":"fa fa-github fa-lg",
     "showXS":"true",
@@ -11,7 +47,7 @@
   {
     "name":"linkedIn",
     "title":"Linked In",
-    "type":"social",
+    "type":"footer",
     "url":"",
     "icon":"fa fa-linkedin fa-lg",
     "showXS":"true",
@@ -20,7 +56,7 @@
   {
     "name":"medium",
     "title":"Medium",
-    "type":"blog",
+    "type":"footer",
     "url":"",
     "icon":"fa fa-medium fa-lg",
     "showXS":"true",
@@ -29,7 +65,7 @@
   {
     "name":"email",
     "title":"Email",
-    "type":"social",
+    "type":"footer",
     "url":"",
     "icon":"fa fa-envelope-o fa-lg",
     "showXS":"true",
