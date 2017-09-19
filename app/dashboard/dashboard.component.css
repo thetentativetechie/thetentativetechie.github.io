@@ -5,6 +5,7 @@
     -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
     -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
     box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    background-color: #FFFFFF;
 }
 .facebook {
     background-color: #3B5998;
@@ -26,6 +27,7 @@
     box-shadow:10px 10px 7px rgba(0,0,0,.7);
     height: 400px;  
     margin-bottom:20px;  
+    background-color: #FFFFFF;
 }
 .image-chip-card-container {
     width: 100%;
@@ -35,6 +37,7 @@
     box-shadow:10px 10px 7px rgba(0,0,0,.7);
     height: 400px;  
     margin-bottom:20px;
+    background-color: #FFFFFF;
 }
 .image-chip-title {
     margin-bottom:  2px #424242;
