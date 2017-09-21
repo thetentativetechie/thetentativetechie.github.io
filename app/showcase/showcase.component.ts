@@ -6,7 +6,8 @@ import {OnInit} from '@angular/core';
 
 @Component({
   selector: 'showcase-list',
-  templateUrl: './showcase.component.html'
+  templateUrl: './showcase.component.html',
+  styleUrls: ['./showcase.component.css']
 })
 export class ShowcaseComponent implements OnInit {
 

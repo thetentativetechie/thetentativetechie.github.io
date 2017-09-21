@@ -1,28 +1,36 @@
-<div class="container" fxLayout="column" *ngIf="isInitialized == true">
-        <div fxFlex="100%" *ngFor="let showcase of showcaseList">
-                <md-card class="example-card" >
-                        <md-card-header>
-                        <div md-card-avatar class="example-header-image"></div>
-                        <md-card-title>{{showcase.title}}</md-card-title>
-                        <md-card-subtitle>
-                                {{showcase.description}}
-                        </md-card-subtitle>
-                        </md-card-header>
-                        <md-card-content>
-                        <p>
-                                {{showcase.description2}}
-                        </p>
-                        <p>
-                                <md-chip-list>
-                                        <md-chip *ngFor="let keyword of showcase.keywords">
-                                                {{keyword}}
-                                        </md-chip>
-                                </md-chip-list>
-                        </p>
-                        </md-card-content>
-                        <md-card-actions>
-                        <button md-button (click)="onShowcaseBtnClick(showcase)">DEMO</button>
-                        </md-card-actions>
-                </md-card> 
+<div class="container" fxLayout="row" fxLayout.lt-md="column" *ngIf="isInitialized == true">
+        <div fxFlex="50%" *ngFor="let showcase of showcaseList">
+                <div class="showcase-container" class.lt-sm="showcase-container-xs">
+                        <div class="showcase-header" class.lt-sm="showcase-header-xs"> 
+                                <img [src]="showcase.icon" class="showcase-image" class.lt-sm="showcase-image-xs">
+                        </div>       
+                        <div class="showcase-body" class.lt-sm="showcase-body-xs"> 
+                                <span class="showcase-body-header">{{showcase.title}}</span> 
+                                <p>
+                                        {{showcase.description}}
+                                </p>
+                                <p>
+                                        {{showcase.description2}}
+                                </p>       
+                                
+                        </div>  
+                        <div class="showcase-demo">
+                                <a>
+                                        <img [src]="showcase.demoicon" class="showcase-demo-icon">
+                                </a>
+                        </div>     
+                        <div class="showcase-footer" class.lt-sm="showcase-footer-xs"> 
+                                
+                                <div class="showcase-rating">
+                                        <i class="fa fa-star fa-lg" aria-hidden="true"></i> 
+                                        <span>{{showcase.rating}}</span>                               
+                                </div>
+                                <div class="showcase-downloads">
+                                        <i class="fa fa-download fa-lg" aria-hidden="true"></i>
+                                        <span>{{showcase.downloads}}</span>                               
+                                </div>                                
+                                
+                        </div>       
+                </div>
         </div>
 </div>

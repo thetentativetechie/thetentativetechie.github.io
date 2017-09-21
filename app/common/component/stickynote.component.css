@@ -58,7 +58,7 @@
   opacity: 0.9;
 }
 .sticky-note-pin {
-  /*background-image: url('/assets/img/pin_yellow.jpg');*/
+  margin-left:30%;
 }
 .sticky-note-header {
   font-family: 'Permanent Marker', cursive;

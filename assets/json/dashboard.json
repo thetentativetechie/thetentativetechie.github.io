@@ -7,7 +7,7 @@
   "description4":"- a fast bowler, ctrl + c & ctrl + v programmer and ... a tentative human",
   "description5":"I'm Umesh Kumar K,a software developer who learnt things the wrong way & now i'm trying to unlearn and learn and will capture these experiences in my blog",
   "description6":"Full Stack Developer",
-  "photo1":"assets/img/card_photo_1.jpg",
+  "photo1":"assets/img/the_tenative_techie.png",
   "photo2":"assets/img/avatar.jpg",
   "photo3":"",
   "photo4":"",
@@ -20,7 +20,7 @@
   "credits":[],
   "flipcardFront":{
     "headerType":"img",
-    "headerContent":"assets/img/card_photo_1.jpg",
+    "headerContent":"assets/img/the_tenative_techie.png",
     "avatarType":"img",
     "avatarContent":"assets/img/avatar.jpg",
     "bodyTitle": "Umesh Kumar K",
