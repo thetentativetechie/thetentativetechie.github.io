@@ -1,16 +1,117 @@
 
 <div *ngIf="isInitialized == true">
     <!-- published articles -->
-    <div class="container" fxLayout="column" *ngFor="let article of publishedArticles">
-        <div fxFlex="50%">
-            <flip-card [frontCard]="article.frontCard" [backCard]="article.backCard" class="flip-card" ></flip-card>        
+    <div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center">
+        <div fxFlex="100%">
+                <md-toolbar class="primary-color">Published Articles</md-toolbar>                
         </div>
     </div>
 
-    <!-- unpublished articles -->
-    <div class="container" fxLayout="column" *ngFor="let article of unpublishedArticles">
-        <div fxFlex="50%">
-            <flip-card [frontCard]="article.frontCard" [backCard]="article.backCard" class="flip-card" ></flip-card>        
+    <!-- -->
+    <div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center" *ngFor="let article of publishedArticles">
+        <div fxFlex="20%">
+            
+        </div>
+        <div fxFlex="20%">
+            <div class="article-image">
+                <img [src]="article.avatar" class="avatar">
+            </div>
+        </div>
+        <div fxFlex="40%">
+            <div class="article-body">
+                <div class="article-title">
+                    {{article.title}}
+                </div>
+                <div class="article-timeline">
+                        <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>  
+                        <span>{{article.date}}</span>                      
+                </div>
+                <div class="article-description">
+                    <p>
+                        {{article.description}}
+                    </p>
+                </div>
+                <div class="article-keywords">
+                    <md-chip-list>
+                        <md-chip *ngFor="let keyword of article.keywords" class="article-keyword-chip">
+                                {{keyword}}
+                        </md-chip>
+                    </md-chip-list>                                
+                </div>
+                <div class="article-action-bar">
+                    <div class="action-btn-left"> 
+                        <button md-raised-button class="action-btn">READ MORE
+                        </button> 
+                    </div>
+                    <div class="action-btn-right"> 
+                        <button md-raised-button class="action-btn">VIEW CODE
+                                <i class="fa fa-code fa-lg" aria-hidden="true"></i>                                
+                        </button> 
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <div fxFlex="20%">
         </div>
     </div>
+        
+
+    <!-- upcoming articles -->
+    <div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center">
+        <div fxFlex="100%">
+                <md-toolbar class="primary-color">Upcoming Articles</md-toolbar>                
+        </div>
+    </div>
+
+    <div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center" *ngFor="let article of unpublishedArticles">
+            <div fxFlex="20%">
+                
+            </div>
+            <div fxFlex="20%">
+                <div class="article-image">
+                    <img [src]="article.avatar" class="avatar">
+                </div>
+            </div>
+            <div fxFlex="40%">
+                <div class="article-body">
+                    <div class="article-title">
+                        {{article.title}}
+                    </div>
+                    <div class="article-timeline">
+                            <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>  
+                            <span>{{article.date}}</span>                      
+                    </div>
+                    <div class="article-description">
+                        <p>
+                            {{article.description}}
+                        </p>
+                    </div>
+                    <div class="article-keywords">
+                        <md-chip-list>
+                            <md-chip *ngFor="let keyword of article.keywords" class="article-keyword-chip">
+                                    {{keyword}}
+                            </md-chip>
+                        </md-chip-list>                                
+                    </div>
+                    <div class="article-action-bar">
+                        <div class="action-btn-left"> 
+                            <button md-raised-button class="action-btn">READ MORE
+                            </button> 
+                        </div>
+                        <div class="action-btn-right"> 
+                            <button md-raised-button class="action-btn">VIEW CODE
+                                    <i class="fa fa-code fa-lg" aria-hidden="true"></i>                                
+                            </button> 
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <div fxFlex="20%">
+            </div>
+        </div>
+
 </div>

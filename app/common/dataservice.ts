@@ -157,43 +157,26 @@ export class DataService {
       return articles;
     }
 
-    getPublishedArticlesList(articles: Article[]): ArticleCard[] {
-      const publishedArticles: ArticleCard[] = [];
+    getPublishedArticlesList(articles: Article[]): Article[] {
+      const publishedArticles: Article[] = [];
       // iterate over the articles
       for (let articleCtr = 0; articleCtr < articles.length; articleCtr ++) {
         const article = articles[articleCtr];
         if (article['status'] === 'done') {
           // convert article into card format
-            const frontCard = new Card('text', ' ', 'img', article.avatar, article.title, [article.description],
-            'View More Details', '', 'View Code', article.codeLink, 'View Blog', article.blogLink,
-            'Back', '' , -1, -1);
-
-            const backCard = new Card('chips', ' ', '', article.avatar, article.title, article.keywords,
-            'View More Details', '', 'View Code', article.codeLink, 'View Blog', article.blogLink,
-            'Back', '' , -1, -1);
-            const articleCard = new ArticleCard(frontCard, backCard);
-            publishedArticles.push(articleCard);
+            publishedArticles.push(article);
         }
       }
       return publishedArticles;
     }
 
-    getUnPublishedArticlesList(articles: Article[]): ArticleCard[] {
-      const unpublishedArticles: ArticleCard[] = [];
+    getUnPublishedArticlesList(articles: Article[]): Article[] {
+      const unpublishedArticles: Article[] = [];
       // iterate over the articles
       for (let articleCtr = 0; articleCtr < articles.length; articleCtr ++) {
         const article = articles[articleCtr];
         if (article['status'] === 'draft') {
-          // convert article into card format
-            const frontCard = new Card('text', ' ', 'img', article.avatar, article.title, [article.description],
-            'View More Details', '', 'View Code', article.codeLink, 'View Blog', article.blogLink,
-            'Back', '' , -1, -1);
-
-            const backCard = new Card('chips', ' ', '', article.avatar, article.title, article.keywords,
-            'View More Details', '', 'View Code', article.codeLink, 'View Blog', article.blogLink,
-            'Back', '' , -1, -1);
-            const articleCard = new ArticleCard(frontCard, backCard);
-            unpublishedArticles.push(articleCard);
+            unpublishedArticles.push(article);
         }
       }
       return unpublishedArticles;

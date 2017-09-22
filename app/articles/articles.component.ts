@@ -8,13 +8,14 @@ import {Card} from '../common/model/card.model';
 
 @Component({
   selector: 'article-list',
-  templateUrl: './articles.component.html'
+  templateUrl: './articles.component.html',
+  styleUrls: ['./articles.component.css']
 })
 export class ArticlesComponent implements OnInit {
 
   dataService: DataService;
-  publishedArticles: ArticleCard[];
-  unpublishedArticles: ArticleCard[];
+  publishedArticles: Article[];
+  unpublishedArticles: Article[];
   isInitialized: Boolean = false;
 
 

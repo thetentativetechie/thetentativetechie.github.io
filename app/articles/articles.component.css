@@ -1,0 +1,56 @@
+.article-image {
+    height: 300px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #FB404B;    
+}
+
+.avatar {
+    height: 60%;
+    margin: 15%;
+}
+
+.article-body {
+    height: 300px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #FB404B;
+}
+
+.article-title {
+    height: 40px;
+    padding-top: 5px;
+}
+
+.article-timeline {
+    height: 30px;
+}
+
+.article-description {
+    height: 65px;
+}
+
+.article-keywords {
+    height: 75px;
+}
+
+.article-action-bar {
+    height: 50px;
+}
+
+.article-keyword-chip {
+    background-color: #FB404B;
+    color: #FFFFFF;
+}
+
+.action-btn-left {
+    display: inline-block;
+}
+
+.action-btn-right {
+    float: right;
+    margin-right: 20px;
+}
+
+.action-btn {
+    background-color: #212121;
+    color: #FFFFFF;
+}
