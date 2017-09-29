@@ -106,3 +106,6 @@
     font-size: 20px;
     color: #333333;
 }
+.card-front-header-img-sm {
+    margin-top:-70px !important;
+}

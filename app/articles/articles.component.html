@@ -75,15 +75,15 @@
     </div>
 
     <div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center" *ngFor="let article of unpublishedArticles">
-            <div fxFlex="20%" fxHide.xs="true">
+            <div fxFlex="20%" fxHide.lt-md="true">
                 
             </div>
-            <div fxFlex="20%" fxHide.xs="true">
+            <div fxFlex="20%" fxHide.lt-md="true">
                 <div class="article-image">
-                    <img [src]="article.avatar" class="avatar">
+                    <img [src]="article.avatar" class.gt-sm="avatar">
                 </div>
             </div>
-            <div fxFlex="40%" >
+            <div fxFlex="40%" fxFlex.lt-md="80%">
                 <div class="article-body" class.xs="article-body-xs">
                     <div class="article-title">
                         {{article.title}}
@@ -92,15 +92,15 @@
                             <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>  
                             <span>{{article.date}}</span>                      
                     </div>
-                    <div class="article-image-xs"  fxHide.gt-xs="true">
-                            <img [src]="article.avatar" class="avatar">
+                    <div class="article-image-xs"  fxHide.gt-sm="true">
+                            <img [src]="article.avatar" class="avatar-lt-md">
                     </div>
                     <div class="article-description" class.xs="article-description-xs">
                         <p>
                             {{article.description}}
                         </p>
                     </div>
-                    <div class="article-keywords" fxHide.xs="true">
+                    <div class="article-keywords" fxHide.lt-md="true">
                         <md-chip-list>
                             <md-chip *ngFor="let keyword of article.keywords" class="primary-color">
                                     {{keyword}}
@@ -125,7 +125,7 @@
                     </div>
                 </div>
             </div>
-            <div fxFlex="20%" fxHide.xs="true">
+            <div fxFlex="20%" fxHide.lt-md="true">
             </div>
         </div>
 

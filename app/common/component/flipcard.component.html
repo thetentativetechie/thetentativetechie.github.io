@@ -2,7 +2,7 @@
     <div class="card secondary-color" id="card" #card>
         <div class="card-front secondary-color" id="card-front">
             <div class="card-front-header" id="card-front-header">
-                <img class="card-front-header-img"  *ngIf="frontCard.headerType=='img'" md-card-image [src] = "frontCard.headerContent" alt="Background Photo">
+                <img class.sm="card-front-header-img-sm"  *ngIf="frontCard.headerType=='img'" md-card-image [src] = "frontCard.headerContent" alt="Background Photo">
                 <span *ngIf="frontCard.headerType=='text'" class="card-front-header-text">{{frontCard.headerContent}}</span>  
             </div>
             <div class="card-front-avatar" id="card-front-avatar">

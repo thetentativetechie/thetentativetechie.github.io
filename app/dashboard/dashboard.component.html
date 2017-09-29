@@ -1,7 +1,7 @@
-<div class="container" fxLayout.gt-xs="row" fxLayout.lt-md="column" fxLayoutGap="20px" *ngIf="isInitialized == true">
+<div class="container" fxLayoutAlign.gt-sm="space-between" fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutGap="20px" *ngIf="isInitialized == true">
     
     <!-- Front End Developer Chips-->
-    <div fxFlex.gt-xs="30%" fxFlex.lt-sm="100%" fxLayoutAlign="stretch" fxFlexOrder.xs="2">
+    <div fxFlex.gt-sm="30%" flFex.sm="75%" fxFlex.lt-sm="100%" fxFlexAlign.gt-sm="center" fxFlexOrder.xs="2">
             <div class="image-chip-card-container secondary-color">
                 <div class="image-chip-title">
                     <h4><span>FULL STACK DEVELOPER</span></h4>
@@ -14,14 +14,14 @@
 
        
     <!-- Flip Card-->
-    <div fxFlex.gt-xs="30%" fxFlex.lt-sm="100%" fxLayoutAlign="stretch"  fxFlexOrder.xs="1">
+    <div fxFlex.gt-sm="30%" flFex.sm="75%" fxFlex.lt-sm="100%" fxFlexAlign.gt-sm="center"  fxFlexOrder.xs="1">
         <div class="flip-card-container">
                 <flip-card [frontCard]="frontCard" [backCard]="backCard" class="flip-card"></flip-card>
         </div>
     </div>
 
     <!-- image -->
-    <div fxFlex.gt-xs="30%" fxFlex.lt-sm="100%" fxLayoutAlign="stretch"  fxFlexOrder.xs="3">
+    <div fxFlex.gt-sm="30%" flFex.sm="75%" fxFlex.lt-sm="100%" fxFlexAlign.gt-sm="center"  fxFlexOrder.xs="3">
         <div class="follow-me-card secondary-color">
             <md-card *ngIf="isContactInitialized == true">
                 

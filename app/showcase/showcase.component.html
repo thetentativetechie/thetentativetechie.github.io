@@ -1,5 +1,5 @@
-<div class="container" fxLayout="row" fxLayout.lt-md="column" *ngIf="isInitialized == true">
-        <div fxFlex="50%" fxFlex.lt-md="100%" *ngFor="let showcase of showcaseList">
+<div class="container" fxLayoutAlign.gt-sm="center" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" *ngIf="isInitialized == true">
+        <div fxFlex="50%" fxFlexAlign="center" fxFlex.lt-md="100%" *ngFor="let showcase of showcaseList">
                 <div class="showcase-container secondary-color" class.lt-sm="showcase-container-xs secondary-color">
                         <div class="showcase-header" class.lt-sm="showcase-header-xs"> 
                                 <img [src]="showcase.icon" class="showcase-image" class.lt-sm="showcase-image-xs">
