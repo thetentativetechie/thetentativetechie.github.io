@@ -1,0 +1,24 @@
+[
+  {
+    "title":"My Portfolio App",
+    "description":"My first android app built using ionic framework",
+    "description2":"Its more than a Hello World,its my portfolio app",
+    "link":"https://play.google.com/store/apps/details?id=com.ionicframework.iamuk556631&hl=en",
+    "keywords":["ionic","android","hybrid app"],
+    "icon":"assets/img/i_am_uk.png",
+    "rating":"5",
+    "downloads":"10",
+    "demoicon":"assets/img/google-play-badge.png"
+  },
+  {
+    "title":"Nakkubetta TV",
+    "description":"Nakkubetta TV caters to the badaga community, with this app badagas across the world are able to watch thier favourite badaga programs",
+    "description2":"",
+    "link":"https://play.google.com/store/apps/details?id=com.uk.nbtv.v001&hl=en",
+    "keywords":["ionic","android","hybrid app"],
+    "icon":"assets/img/nakkubetta.jpg",
+    "rating":"4.83",
+    "downloads":"2000",
+    "demoicon":"assets/img/google-play-badge.png"
+  }
+]

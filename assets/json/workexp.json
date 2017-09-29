@@ -1,0 +1,64 @@
+[
+  {
+    "company":"Aricent",
+    "logo":"",
+    "title":"Technnical Lead",
+    "keyhighlights":[{
+      "noteHeading":"Oct 2012 - Mar 2013",
+      "noteContentType":"text",
+      "noteContentText":"Helpled implement Aricent's IC billing at Uninor,Gurgoan"
+    }],
+    "highlights":[{
+      "noteHeading":"Sep 2006",
+      "noteContentType":"text",
+      "noteContentText":"Started my career at Aricent"
+    },{
+      "noteHeading":"2006 - 2008",
+      "noteContentType":"text",
+      "noteContentText":"Functionally tested Alcatel's WiMax OMC-R"
+    },{
+      "noteHeading":"2008 - 2010",
+      "noteContentType":"text",
+      "noteContentText":"Worked in many teams as a Java developer"
+    },{
+      "noteHeading":"2010 - 2013",
+      "noteContentType":"text",
+      "noteContentText":"Full stack developer for Aricent's Interconnect & other billing products"
+    }],
+    "location":"Bangalore, IN",
+    "date":"Sept 2006 to May 2013"
+  },
+  {
+    "company":"FIS",
+    "logo":"",
+    "title":"Software Engineer - II",
+    "keyhighlights":[{
+      "noteHeading":"May 2015",
+      "noteContentType":"text",
+      "noteContentText":"Laureate winner for old portal screens conversion"
+    },{
+      "noteHeading":"May 2016",
+      "noteContentType":"text",
+      "noteContentText":"Developed an android app for InTrader during FIS Hackathon"
+    }],
+    "highlights":[{
+      "noteHeading":"May 2013",
+      "noteContentType":"text",
+      "noteContentText":"Joined Fidelity Information Services (FIS)"
+    },{
+      "noteHeading":"2013 - 2014",
+      "noteContentType":"text",
+      "noteContentText":"Full stack developer for FIS's InTrader portal"
+    },{
+      "noteHeading":"2014 - 2017",
+      "noteContentType":"text",
+      "noteContentText":"Converted jsp/struts based portal screens to SPA with angular/jersey"
+    },{
+      "noteHeading":"2015 - 2016",
+      "noteContentType":"text",
+      "noteContentText":"Developed BI visualizations for portal with Logi Info tool"
+    }],
+    "location":"Bangalore, IN",
+    "date":"Since May 2013"
+  }
+]

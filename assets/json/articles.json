@@ -1,0 +1,42 @@
+[
+  {
+    "title":"Angular Hello World",
+    "description":"This site is built with angular, angular material & angular material flex layout. Learn how to build a site with angular 2",
+    "keywords":["angular","angular material","flex layout","github pages"],
+    "codeLink":"",
+    "blogLink":"",
+    "status":"draft",
+    "date":"",
+    "avatar":"assets/img/angular.svg"
+  },
+  {
+    "title":"AngularJS Hello World",
+    "description":"Learn how to build a site similar to this using AngularJS (angular version 1.x)",
+    "keywords":["angularjs","angularjs material","flex layout"],
+    "codeLink":"",
+    "blogLink":"",
+    "status":"draft",
+    "date":"",
+    "avatar":"assets/img/angular.svg"
+  },
+  {
+    "title":"NativeScript Hello World",
+    "description":"Learn how to build a native android app using telerik's nativescript",
+    "keywords":["nativescript","android","native mobile app"],
+    "codeLink":"",
+    "blogLink":"",
+    "status":"draft",
+    "date":"",
+    "avatar":"assets/img/nativescript.png"
+  },
+  {
+    "title":"Ionic Hello World",
+    "description":"Learn how to build a hybrid android app using the ionic framework",
+    "keywords":["ionic","hybrid mobile app","android","angular"],
+    "codeLink":"",
+    "blogLink":"",
+    "status":"draft",
+    "date":"",
+    "avatar":"assets/img/ionic.png"    
+  }
+]

@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><script>// See http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/
+      (function(){
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();</script><base href="https://thetentativetechie.github.io/"><meta charset="utf-8"><title>The Tentative Techie</title><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/x-icon" href="favicon.ico"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/><!-- Font for heading --><link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"><!-- Font for navigation --><link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet"><link href="styles.99fa73123a5cb30a9144.bundle.css" rel="stylesheet"/></head><body class="custom-theme mat-app-background"><app-root></app-root><script type="text/javascript" src="inline.9c88dc02be3b39a380b5.bundle.js"></script><script type="text/javascript" src="polyfills.67d068662b88f84493d2.bundle.js"></script><script type="text/javascript" src="vendor.6a2fe20f9e4fcd9bb641.bundle.js"></script><script type="text/javascript" src="main.4efe4e402ddd15e1a335.bundle.js"></script></body></html>
