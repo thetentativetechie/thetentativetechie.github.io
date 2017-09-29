@@ -1,12 +1,12 @@
 <div class="container" fxLayout.gt-xs="row" fxLayout.lt-md="column" fxLayoutGap="20px" *ngIf="isInitialized == true">
     
     <!-- Front End Developer Chips-->
-    <div fxFlex.gt-xs="30%" fxFlex.lt-sm="100%" fxLayoutAlign="stretch">
+    <div fxFlex.gt-xs="30%" fxFlex.lt-sm="100%" fxLayoutAlign="stretch" fxFlexOrder.xs="2">
             <div class="image-chip-card-container secondary-color">
                 <div class="image-chip-title">
                     <h4><span>FULL STACK DEVELOPER</span></h4>
                 </div>
-                    <div class="image-chip-card" *ngFor="let keyword of keywords">
+                <div class="image-chip-card" *ngFor="let keyword of keywords">
                         <image-chip [imagechip]="keyword"></image-chip>
                 </div>
             </div>
@@ -14,37 +14,37 @@
 
        
     <!-- Flip Card-->
-    <div fxFlex.gt-xs="30%" fxFlex.lt-sm="100%" fxLayoutAlign="stretch">
-            <flip-card [frontCard]="frontCard" [backCard]="backCard" class="flip-card"></flip-card>
+    <div fxFlex.gt-xs="30%" fxFlex.lt-sm="100%" fxLayoutAlign="stretch"  fxFlexOrder.xs="1">
+        <div class="flip-card-container">
+                <flip-card [frontCard]="frontCard" [backCard]="backCard" class="flip-card"></flip-card>
+        </div>
     </div>
 
     <!-- image -->
-    <div fxFlex.gt-xs="30%" fxFlex.lt-sm="100%" fxLayoutAlign="stretch">
-            <div class="follow-me-card secondary-color">
+    <div fxFlex.gt-xs="30%" fxFlex.lt-sm="100%" fxLayoutAlign="stretch"  fxFlexOrder.xs="3">
+        <div class="follow-me-card secondary-color">
+            <md-card *ngIf="isContactInitialized == true">
                 
-                <md-card *ngIf="isContactInitialized == true">
-                        <md-card-header>
-                            <!-- the tentative techie icon comes here 
-                            <div class="follow-me-avatar">
-                                <img class="follow-me-avatar-img" src="assets/img/t3_shield.png">
-                            </div>
-                            -->
-                            <div class="follow-me-avatar">
-                                <h4>FOLLOW ME</h4>
-                            </div>
-                        </md-card-header>
-        
-                        <!-- different follow me btns come here --> 
-                        <md-card-content>
-                            <p *ngFor="let contact of contacts">
-                                <a md-fab [class]="contact.name" (click)="onClickContact(contact)">
-                                    <i [class]="contact.icon" aria-hidden="true"></i>
-                                </a>
-                                <span>{{contact.title}}</span>
-                            </p>
-                        </md-card-content>
-                    </md-card>
-            </div>
+
+                <!-- different follow me btns come here --> 
+                <md-card-content>
+                    <p *ngFor="let contact of contacts">
+                        <a md-fab [class]="contact.name" (click)="onClickContact(contact)">
+                            <i [class]="contact.icon" aria-hidden="true"></i>
+                        </a>
+                        <span>{{contact.title}}</span>
+                    </p>
+                </md-card-content>
+
+                <md-card-header>
+                    <div class="follow-me-avatar">
+                        <h4>FOLLOW ME</h4>
+                    </div>
+                </md-card-header>
+
+
+            </md-card>
+        </div>
     </div>
 
     

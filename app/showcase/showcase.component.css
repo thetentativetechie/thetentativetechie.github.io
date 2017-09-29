@@ -6,8 +6,8 @@
 }
 .showcase-container-xs {
     height: 450px;
-    width: 275px;
-    margin:20px;
+    width: 100%;
+    margin:2px;
     position: relative;
 }
 .showcase-header, .showcase-header-xs {
@@ -20,7 +20,7 @@
     margin-left:75px;
 }
 .showcase-demo-xs {
-    margin-left:25px;
+    margin-left:2px;
 }
 .showcase-demo-icon {
     height: 100%;
@@ -33,7 +33,7 @@
     color: #333333;
 }
 .showcase-body-header-xs {
-    margin-left: 40px;
+    margin-left: 4px;
 }
 .showcase-footer {
     height: 50px;
@@ -43,9 +43,9 @@
 }
 .showcase-footer-xs {
     height: 50px;
-    margin: 0 10px 5px;
+    margin: 0 5px 2px;
     padding-top: 5px;
-    border-top: 1px solid #FB404B;
+    border-top: 1px solid #05386B;
 }
 .showcase-image {
     height: 100%;
@@ -59,10 +59,10 @@
 }
 
 .showcase-image-xs {
-    height: 100%;
-    width: 85%;
+    height: 60%;
+    width: 60%;
     border-radius: 6px;
-    margin-left:25px;
+    margin-left:50px;
     margin-top:-20px;
     -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
     -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);

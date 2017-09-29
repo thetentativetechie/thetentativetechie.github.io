@@ -37,10 +37,6 @@ export class ContactComponent implements OnInit {
     console.log(contact);
     if (contact.name !== 'email') {
       window.open(contact.url, '_blank');
-    } else {
-      this.snackBar.open(contact.url, contact.url , {
-        duration: 2000,
-      });
     }
   };
 

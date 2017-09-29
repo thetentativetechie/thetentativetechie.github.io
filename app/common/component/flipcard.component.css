@@ -72,6 +72,12 @@
     width: 95%;
     font-family: 'Roboto', sans-serif;   
     font-size: 18px;
+    height: 48px;
+    margin-left: 8px;
+}
+
+.card-back-flip-btn {
+    height: 58px;
 }
 
 .card-back-title {

@@ -1,5 +1,4 @@
-
-<div class="flip-card-container secondary-color" id="flip-card-container">
+<div class="secondary-color" id="flip-card-container">
     <div class="card secondary-color" id="card" #card>
         <div class="card-front secondary-color" id="card-front">
             <div class="card-front-header" id="card-front-header">
@@ -37,8 +36,8 @@
             </div>
             <!-- action buttons -->
             <div class="card-back-action">
-                <button md-raised-button class="primary-color">{{backCard.actionBtnLabel}}</button>    
-                <button md-raised-button class="primary-color">{{backCard.actionBtn1Label}}</button>                
+                <button md-raised-button class="primary-color card-back-action-btn">{{backCard.actionBtnLabel}}</button>    
+                <button md-raised-button class="primary-color card-back-action-btn-1">{{backCard.actionBtn1Label}}</button>                
             </div>
             <div>
                 <button md-raised-button class="card-back-flip-btn primary-color" (click)="unflip()">{{backCard.backBtnLabel}}</button>                    

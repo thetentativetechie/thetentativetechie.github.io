@@ -9,29 +9,32 @@
 
     <!-- -->
     <div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center" *ngFor="let article of publishedArticles">
-        <div fxFlex="20%">
+        <div fxFlex="20%" fxShow.xs="false">
             
         </div>
-        <div fxFlex="20%">
+        <div fxFlex="20%" fxHide.xs="true">
             <div class="secondary-color article-image">
                 <img [src]="article.avatar" class="avatar">
             </div>
         </div>
         <div fxFlex="40%">
-            <div class="secondary-color article-body">
+            <div class="secondary-color article-body" class.xs="secondary-color article-body-xs">
                 <div class="article-title">
                     {{article.title}}
                 </div>
-                <div class="article-timeline">
+                <div class="article-timeline" fxHide.xs="true">
                         <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>  
                         <span>{{article.date}}</span>                      
+                </div>
+                <div class="article-image-xs" fxHide.gt-xs="true">
+                        <img [src]="article.avatar" class="avatar">
                 </div>
                 <div class="article-description">
                     <p>
                         {{article.description}}
                     </p>
                 </div>
-                <div class="article-keywords">
+                <div class="article-keywords" fxHide.xs="true">
                     <md-chip-list>
                         <md-chip *ngFor="let keyword of article.keywords" class="article-keyword-chip">
                                 {{keyword}}
@@ -40,12 +43,16 @@
                 </div>
                 <div class="article-action-bar">
                     <div class="action-btn-left"> 
-                        <button md-raised-button class="action-btn">READ MORE
+                        <button md-raised-button class="action-btn primary-color">
+                            <span fxHide.xs="true">READ MORE</span>
+                            <span fxShow.xs="true">BLOG</span>
                         </button> 
                     </div>
                     <div class="action-btn-right"> 
-                        <button md-raised-button class="action-btn">VIEW CODE
-                                <i class="fa fa-code fa-lg" aria-hidden="true"></i>                                
+                        <button md-raised-button class="action-btn primary-color">
+                            <span fxHide.xs="true">VIEW CODE</span>
+                            <span fxShow.xs="true">CODE</span>
+                            <i class="fa fa-code fa-lg" aria-hidden="true"></i>                                
                         </button> 
                     </div>
                     
@@ -53,7 +60,7 @@
                 </div>
             </div>
         </div>
-        <div fxFlex="20%">
+        <div fxFlex="20%" fxShow.xs="false">
         </div>
     </div>
     
@@ -68,51 +75,57 @@
     </div>
 
     <div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center" *ngFor="let article of unpublishedArticles">
-            <div fxFlex="20%">
+            <div fxFlex="20%" fxHide.xs="true">
                 
             </div>
-            <div fxFlex="20%">
+            <div fxFlex="20%" fxHide.xs="true">
                 <div class="article-image">
                     <img [src]="article.avatar" class="avatar">
                 </div>
             </div>
-            <div fxFlex="40%">
-                <div class="article-body">
+            <div fxFlex="40%" >
+                <div class="article-body" class.xs="article-body-xs">
                     <div class="article-title">
                         {{article.title}}
                     </div>
-                    <div class="article-timeline">
+                    <div class="article-timeline" fxHide.xs="true">
                             <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>  
                             <span>{{article.date}}</span>                      
                     </div>
-                    <div class="article-description">
+                    <div class="article-image-xs"  fxHide.gt-xs="true">
+                            <img [src]="article.avatar" class="avatar">
+                    </div>
+                    <div class="article-description" class.xs="article-description-xs">
                         <p>
                             {{article.description}}
                         </p>
                     </div>
-                    <div class="article-keywords">
+                    <div class="article-keywords" fxHide.xs="true">
                         <md-chip-list>
                             <md-chip *ngFor="let keyword of article.keywords" class="primary-color">
                                     {{keyword}}
                             </md-chip>
                         </md-chip-list>                                
                     </div>
+                   
                     <div class="article-action-bar">
-                        <div class="action-btn-left"> 
-                            <button md-raised-button class="action-btn primary-color">READ MORE
+                        <div class="action-btn-left" class.xs="action-btn-left-xs"> 
+                                <button md-raised-button class="action-btn primary-color">
+                                    <span fxHide.xs="true">READ MORE</span>
+                                    <span fxShow.xs="true"  fxHide.gt-xs="true">BLOG</span>
+                                </button> 
+                        </div>
+                        <div class="action-btn-right" class.xs="action-btn-right-xs"> 
+                            <button md-raised-button class="action-btn primary-color" >
+                                <span fxHide.xs="true">VIEW CODE</span>
+                                <span fxShow.xs="true" fxHide.gt-xs="true">CODE</span>
+                                <i class="fa fa-code fa-lg" aria-hidden="true"></i>                                
                             </button> 
                         </div>
-                        <div class="action-btn-right"> 
-                            <button md-raised-button class="action-btn primary-color">VIEW CODE
-                                    <i class="fa fa-code fa-lg" aria-hidden="true"></i>                                
-                            </button> 
-                        </div>
-                        
-                        
                     </div>
                 </div>
             </div>
-            <div fxFlex="20%">
+            <div fxFlex="20%" fxHide.xs="true">
             </div>
         </div>
 

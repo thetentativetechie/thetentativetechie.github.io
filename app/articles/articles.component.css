@@ -5,6 +5,10 @@
     border-bottom: 2px solid #05386B;
 }
 
+.article-image-xs {
+    height: 100px;
+}
+
 .avatar {
     height: 60%;
     margin: 15%;
@@ -12,6 +16,13 @@
 
 .article-body {
     height: 300px;
+    background: #EDF5E1;
+    color: #05386B !important;  
+    border-bottom: 2px solid #05386B;
+}
+
+.article-body-xs {
+    height: 320px;
     background: #EDF5E1;
     color: #05386B !important;  
     border-bottom: 2px solid #05386B;
@@ -33,6 +44,10 @@
     height: 65px;
 }
 
+.article-description-xs {
+    height: 105px;
+}
+
 .article-keywords {
     height: 75px;
 }
@@ -48,10 +63,16 @@
     display: inline-block;
 }
 
-.action-btn-right {
+.action-btn-left-xs {
+    display: inline-block;
+}
+
+.action-btn-right-xs {
     float: right;
     margin-right: 20px;
 }
 
-.action-btn {
+.action-btn-right {
+    float: right;
+    margin-right: 20px;
 }

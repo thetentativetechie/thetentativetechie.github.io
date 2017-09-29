@@ -37,11 +37,21 @@
     height: 400px;  
     margin-bottom:20px;
 }
+.flip-card-container {
+    width: 100%;
+    margin-top:20px;
+    -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    height: 400px;  
+    margin-bottom:20px;
+}
 .image-chip-title {
     margin-bottom:  2px #424242;
-    height: 100px;
+    height: 75px;
     font-weight: 300;
-    font-family: 'Roboto', sans-serif;    
+    font-family: 'Roboto', sans-serif;   
+    font-size: 23px; 
     color: #333333;
     margin-left: 20%;
 }
@@ -49,7 +59,8 @@
 .follow-me-avatar {
     color: #333333;
     font-weight: 300;
-    height: 80px;
+    height: 65px;
+    font-size: 23px;
 }
 
 .follow-me-avatar-img {
