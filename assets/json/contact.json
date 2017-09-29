@@ -3,7 +3,7 @@
     "name":"facebook",
     "title":"Facebook",
     "type":"followme",
-    "url":"",
+    "url":"https://www.facebook.com/umesh.mec",
     "icon":"fa fa-facebook-official fa-lg",
     "showXS":"true",
     "position":"2"
@@ -12,7 +12,7 @@
     "name":"linkedin",
     "title":"Linked In",
     "type":"followme",
-    "url":"",
+    "url":"https://www.linkedin.com/in/umesh-kumar-4a280168/",
     "icon":"fa fa-linkedin-square fa-lg",
     "showXS":"true",
     "position":"2"
@@ -21,7 +21,7 @@
     "name":"twitter",
     "title":"Twitter",
     "type":"followme",
-    "url":"",
+    "url":"https://twitter.com/ukbokamalla",
     "icon":"fa fa-twitter-square fa-lg",
     "showXS":"true",
     "position":"2"
@@ -30,7 +30,7 @@
     "name":"gplus",
     "title":"Google Plus",
     "type":"followme",
-    "url":"",
+    "url":"https://plus.google.com/+UmeshKumarK",
     "icon":"fa fa-google-plus-square fa-lg",
     "showXS":"true",
     "position":"2"
@@ -39,7 +39,7 @@
     "name":"github",
     "title":"Github",
     "type":"footer",
-    "url":"",
+    "url":"https://github.com/thetentativetechie",
     "icon":"fa fa-github fa-lg",
     "showXS":"true",
     "position":"2"
@@ -48,7 +48,7 @@
     "name":"linkedIn",
     "title":"Linked In",
     "type":"footer",
-    "url":"",
+    "url":"https://www.linkedin.com/in/umesh-kumar-4a280168/",
     "icon":"fa fa-linkedin fa-lg",
     "showXS":"true",
     "position":"2"
@@ -57,7 +57,7 @@
     "name":"medium",
     "title":"Medium",
     "type":"footer",
-    "url":"",
+    "url":"https://medium.com/@thetentativetechie",
     "icon":"fa fa-medium fa-lg",
     "showXS":"true",
     "position":"4"
@@ -66,7 +66,7 @@
     "name":"email",
     "title":"Email",
     "type":"footer",
-    "url":"",
+    "url":"umeshkumark@outlook.com",
     "icon":"fa fa-envelope-o fa-lg",
     "showXS":"true",
     "position":"5"

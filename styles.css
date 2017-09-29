@@ -5,17 +5,30 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    background: #eeeeee;
+    background: #5CDB95;
+}
+
+.site-background {
+    background: #5CDB95; 
+}
+
+.primary-color {
+    background: #05386B;
+    color:#ffffff !important;
+}
+
+.secondary-color {
+    background: #EDF5E1;
+    color: #05386B !important;    
 }
 
 .primary-background {
-    /*background: #e53935;*/
-    background: linear-gradient(60deg,#ef5350,#e53935);    
+    background: #05386B;
     color:#ffffff;
 }
 
 .secondary-background {
-    background: #eeeeee;
+    background: #5CDB95;
 }
 
 .about-me-card {
@@ -23,7 +36,7 @@ body {
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.14);
     border-radius: 6px;
     color: rgba(0,0,0,.87);
-    background: #fff;
+    background: #EDF5E1;
 }
 
 .about-me-card-div-upper {
@@ -48,18 +61,12 @@ body {
 }
 
 .about-me-card-avatar {
-    background: none repeat scroll 0 0 #FFFFFF;
+    background: none repeat scroll 0 0 #EDF5E1;
     width: 100%;
 }
 
 
-.primary-color {
-    background-color:#e53935;
-    color:#FFFFFF;
-    opacity:1;
-}
-
 .empty-div {
-    height:40px;
-    background-color: #eeeeee;
+    height:20px;
+    background-color: #5CDB95;
 }

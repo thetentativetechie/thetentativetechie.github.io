@@ -1,13 +1,11 @@
 .showcase-container {
     height: 450px;
-    background-color: #FFFFFF;
     width: 300px;
     margin:40px;
     position: relative;
 }
 .showcase-container-xs {
     height: 450px;
-    background-color: #FFFFFF;
     width: 275px;
     margin:20px;
     position: relative;
@@ -29,7 +27,10 @@
     width: 50%
 }
 .showcase-body-header {
-    margin-left: 80px;
+    margin-left: 50px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #333333;
 }
 .showcase-body-header-xs {
     margin-left: 40px;
@@ -38,7 +39,7 @@
     height: 50px;
     margin: 0 20px 10px;
     padding-top: 10px;
-    border-top: 1px solid #FB404B;
+    border-top: 1px solid #05386B;
 }
 .showcase-footer-xs {
     height: 50px;

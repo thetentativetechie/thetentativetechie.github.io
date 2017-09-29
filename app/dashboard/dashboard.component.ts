@@ -47,4 +47,9 @@ export class DashboardComponent implements OnInit {
       console.dir(dashboardDetails);
   };
 
+  onClickContact = function (contact) {
+    console.dir(contact);
+    window.open(contact.url, '_blank');
+    };
+
 }

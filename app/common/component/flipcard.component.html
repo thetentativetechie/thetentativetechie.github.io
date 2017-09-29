@@ -1,7 +1,7 @@
 
-<div class="flip-card-container" id="flip-card-container">
-    <div class="card" id="card" #card>
-        <div class="card-front" id="card-front">
+<div class="flip-card-container secondary-color" id="flip-card-container">
+    <div class="card secondary-color" id="card" #card>
+        <div class="card-front secondary-color" id="card-front">
             <div class="card-front-header" id="card-front-header">
                 <img class="card-front-header-img"  *ngIf="frontCard.headerType=='img'" md-card-image [src] = "frontCard.headerContent" alt="Background Photo">
                 <span *ngIf="frontCard.headerType=='text'" class="card-front-header-text">{{frontCard.headerContent}}</span>  
@@ -11,7 +11,7 @@
                 <span class="card-front-avatar-text" *ngIf="frontCard.avatarType=='text'">{{frontCard.avatarContent}}</span>
             </div>
             <div class="card-front-title" id="card-front-title">
-                <p>
+                <p class="card-front-title-p">
                     <span>{{frontCard.bodyTitle}}</span>
                 </p>
             </div>
@@ -21,10 +21,10 @@
                 </p>
             </div>
             <div>
-                <button md-raised-button class="card-front-flip-btn" (click)="flip()">{{frontCard.frontBtnLabel}}</button>                    
+                <button md-raised-button class="card-front-flip-btn primary-color" (click)="flip()">{{frontCard.frontBtnLabel}}</button>                    
             </div>
         </div>
-        <div class="card-back" id="card-back">
+        <div class="card-back secondary-color" id="card-back">
             <div class="card-back-title">  
                 <p>
                     <span>{{backCard.bodyTitle}}</span>
@@ -37,11 +37,11 @@
             </div>
             <!-- action buttons -->
             <div class="card-back-action">
-                <button md-raised-button class="card-back-action-btn">{{backCard.actionBtnLabel}}</button>    
-                <button md-raised-button class="card-back-action-btn-1">{{backCard.actionBtn1Label}}</button>                
+                <button md-raised-button class="primary-color">{{backCard.actionBtnLabel}}</button>    
+                <button md-raised-button class="primary-color">{{backCard.actionBtn1Label}}</button>                
             </div>
             <div>
-                <button md-raised-button class="card-back-flip-btn" (click)="unflip()">{{backCard.backBtnLabel}}</button>                    
+                <button md-raised-button class="card-back-flip-btn primary-color" (click)="unflip()">{{backCard.backBtnLabel}}</button>                    
             </div>
         </div>
     </div>

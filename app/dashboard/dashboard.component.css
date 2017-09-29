@@ -5,7 +5,6 @@
     -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
     -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
     box-shadow:10px 10px 7px rgba(0,0,0,.7);
-    background-color: #FFFFFF;
 }
 .facebook {
     background-color: #3B5998;
@@ -27,7 +26,7 @@
     box-shadow:10px 10px 7px rgba(0,0,0,.7);
     height: 400px;  
     margin-bottom:20px;  
-    background-color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;    
 }
 .image-chip-card-container {
     width: 100%;
@@ -37,9 +36,24 @@
     box-shadow:10px 10px 7px rgba(0,0,0,.7);
     height: 400px;  
     margin-bottom:20px;
-    background-color: #FFFFFF;
 }
 .image-chip-title {
     margin-bottom:  2px #424242;
     height: 100px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;    
+    color: #333333;
+    margin-left: 20%;
+}
+
+.follow-me-avatar {
+    color: #333333;
+    font-weight: 300;
+    height: 80px;
+}
+
+.follow-me-avatar-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
 }

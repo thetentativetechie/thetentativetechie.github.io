@@ -48,13 +48,13 @@
 
 }
 
-.sticky-note-yellow {
+.sticky-note-primary {
   background-color:#ffeb3b;
   color:#000000;
 }
-.sticky-note-red {
-  background-color:#FB404B;
-  color:#FFFFFF;
+.sticky-note-secondary {
+  background-color:#EDF5E1;
+  color:#05386B;
   opacity: 0.9;
 }
 .sticky-note-pin {

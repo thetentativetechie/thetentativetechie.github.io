@@ -1,7 +1,8 @@
 .article-image {
-    height: 300px;
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #FB404B;    
+    height: 300px; 
+    background: #EDF5E1;
+    color: #05386B !important;
+    border-bottom: 2px solid #05386B;
 }
 
 .avatar {
@@ -11,13 +12,17 @@
 
 .article-body {
     height: 300px;
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #FB404B;
+    background: #EDF5E1;
+    color: #05386B !important;  
+    border-bottom: 2px solid #05386B;
 }
 
 .article-title {
     height: 40px;
     padding-top: 5px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333333;
 }
 
 .article-timeline {
@@ -37,8 +42,6 @@
 }
 
 .article-keyword-chip {
-    background-color: #FB404B;
-    color: #FFFFFF;
 }
 
 .action-btn-left {
@@ -51,6 +54,4 @@
 }
 
 .action-btn {
-    background-color: #212121;
-    color: #FFFFFF;
 }

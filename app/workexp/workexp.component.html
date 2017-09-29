@@ -10,7 +10,7 @@
         <!-- highlights -->
         <div class="container" fxLayout="row" fxLayout.xs="column"  *ngFor="let workexp of workExpList">
                 <div fxFlex="25%" fxFlex.xs="100%" *ngFor="let stickynotetext of workexp.highlights">
-                        <sticky-note [stickynotetext]="stickynotetext" stickynoteclass="sticky-note-yellow"></sticky-note>
+                        <sticky-note [stickynotetext]="stickynotetext" stickynoteclass="sticky-note-primary"></sticky-note>
                 </div>
         </div>
 
@@ -24,7 +24,7 @@
         <!-- key highlights -->
         <div class="container" fxLayout="row" fxLayout.xs="column">
                 <div fxFlex="30%" fxFlex.xs="100%" *ngFor="let stickynotetext of keyHighlights">
-                        <sticky-note [stickynotetext]="stickynotetext" stickynoteclass="sticky-note-red"></sticky-note>
+                        <sticky-note [stickynotetext]="stickynotetext" stickynoteclass="sticky-note-secondary"></sticky-note>
                 </div>
         </div>                
 </div>

@@ -7,25 +7,19 @@ import {ImageChip} from '../model/imagechip.model';
     templateUrl: './imagechip.component.html',
     animations: [
         trigger ('fadein', [
-            state('0', style({
-                transform: 'translateY(-100%)'
-            })),
-            state('1', style({
-                transform: 'translateY(100%)'
-            })),
+            state('0', style({width: 140, transform: 'translateX(0)', opacity: 1})),
             transition('0 => 1', [
-                animate(300, keyframes([
-                style({opacity: 0, transform: 'translateY(-50%)', offset: 0}),
-                style({opacity: 1, transform: 'translateY(15px)',  offset: 0.3}),
-                style({opacity: 1, transform: 'translateY(0)',     offset: 1.0})
-                ]))
+                style({width: 10, transform: 'translateX(50px)', opacity: 1}),
+                animate('1s 0.1s ease', style({
+                transform: 'translateX(0)',
+                width: 140
+                }))
             ]),
             transition('1 => 0', [
-                animate(300, keyframes([
-                  style({opacity: 1, transform: 'translateY(0)',     offset: 0}),
-                  style({opacity: 1, transform: 'translateY(-15px)', offset: 0.7}),
-                  style({opacity: 0, transform: 'translateY(90%)',  offset: 1.0})
-                ]))
+                animate('1s 0.1s ease-out', style({
+                transform: 'translateX(50px)',
+                width: 10
+                }))
             ])
         ])
     ]
@@ -37,14 +31,14 @@ export class ImageChipComponent {
     @Input() imagechip: ImageChip;
 
     constructor() {
-        setTimeout(() => {
-            if (this.state === 0) {
+        setInterval(() => {
+            if (this.state  === 0) {
                 this.state = 1;
             } else {
                 this.state = 0;
             }
             console.log(this.state);
-        }, 1000);
+        }, 3000);
     }
 
 }

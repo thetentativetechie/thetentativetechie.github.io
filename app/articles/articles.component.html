@@ -13,12 +13,12 @@
             
         </div>
         <div fxFlex="20%">
-            <div class="article-image">
+            <div class="secondary-color article-image">
                 <img [src]="article.avatar" class="avatar">
             </div>
         </div>
         <div fxFlex="40%">
-            <div class="article-body">
+            <div class="secondary-color article-body">
                 <div class="article-title">
                     {{article.title}}
                 </div>
@@ -56,7 +56,9 @@
         <div fxFlex="20%">
         </div>
     </div>
-        
+    
+    <div class="empty-div">
+    </div>
 
     <!-- upcoming articles -->
     <div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center">
@@ -90,18 +92,18 @@
                     </div>
                     <div class="article-keywords">
                         <md-chip-list>
-                            <md-chip *ngFor="let keyword of article.keywords" class="article-keyword-chip">
+                            <md-chip *ngFor="let keyword of article.keywords" class="primary-color">
                                     {{keyword}}
                             </md-chip>
                         </md-chip-list>                                
                     </div>
                     <div class="article-action-bar">
                         <div class="action-btn-left"> 
-                            <button md-raised-button class="action-btn">READ MORE
+                            <button md-raised-button class="action-btn primary-color">READ MORE
                             </button> 
                         </div>
                         <div class="action-btn-right"> 
-                            <button md-raised-button class="action-btn">VIEW CODE
+                            <button md-raised-button class="action-btn primary-color">VIEW CODE
                                     <i class="fa fa-code fa-lg" aria-hidden="true"></i>                                
                             </button> 
                         </div>

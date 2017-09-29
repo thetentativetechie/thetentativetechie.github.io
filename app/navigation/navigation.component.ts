@@ -6,7 +6,8 @@ import {OnInit} from '@angular/core';
 
 @Component({
   selector: 'navigation-list',
-  templateUrl: './navigation.component.html'
+  templateUrl: './navigation.component.html',
+  styleUrls: ['./navigation.component.css']
 })
 export class NavigationComponent implements OnInit {
 

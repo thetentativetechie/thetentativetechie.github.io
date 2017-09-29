@@ -7,7 +7,7 @@ fxLayoutAlign="space-around"  *ngIf="isInitialized == true">
     <div fxFlex="{{contactColumnWidth}}%" *ngFor="let contact of contacts">
             <a md-icon-button (click)="onContactClick(contact)" >
                 <i [class]="contact.icon" aria-hidden="true"></i>
-                <span fxHide.xs="true">{{contact.title}}</span>
+                <span fxHide.xs="true" class="contact-title">{{contact.title}}</span>
                 </a>                    
     </div>
     

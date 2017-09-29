@@ -2,11 +2,13 @@ import {Component} from '@angular/core';
 import {DataService} from '../common/dataservice';
 import {Contact} from './contact.model';
 import {OnInit} from '@angular/core';
+import {MdSnackBar} from '@angular/material';
 
 
 @Component({
   selector: 'contact-list',
-  templateUrl: './contact.component.html'
+  templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
 
@@ -14,9 +16,11 @@ export class ContactComponent implements OnInit {
   contacts: Contact[];
   contactColumnWidth: Number;
   isInitialized: Boolean = false;
+  snackBar: MdSnackBar;
 
-  constructor(dataService: DataService) {
+  constructor(dataService: DataService, snackBar: MdSnackBar) {
     this.dataService = dataService;
+    this.snackBar = snackBar;
   }
 
 
@@ -31,6 +35,13 @@ export class ContactComponent implements OnInit {
 
   onContactClick = function(contact) {
     console.log(contact);
+    if (contact.name !== 'email') {
+      window.open(contact.url, '_blank');
+    } else {
+      this.snackBar.open(contact.url, contact.url , {
+        duration: 2000,
+      });
+    }
   };
 
 }
